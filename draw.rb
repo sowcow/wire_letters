@@ -29,11 +29,11 @@ if __FILE__ == $0
   c.render 'rare_consonants.png'
 
   c = DrawContext.new
-  c.draw "mwpb"
+  c.draw "m w p b"
   c.next_line
-  c.draw " vf "
+  c.draw "  v f  "
   c.next_line
-  c.draw " ykg"
+  c.draw "  y k g"
   c.render 'asymmetric_consonants.png'
 
   c = DrawContext.new

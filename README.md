@@ -8,11 +8,19 @@ It has been entertaining and exploratory/creative process with challenges in the
 
 > I make side notes in these blocks.
 > For example here I can say that it is the second iteration of me doing own cursive.
+> Also I published it on 22th of July, 2023 and it was still on early stage of practical testing it at the time.
 
 
 # What
 
 ![Alphabet in the script example](Alphabet.png?raw=true)
+
+
+# Examples
+
+![Different words showcase](showcase.png?raw=true)
+
+> Disclaimer: interesting looks of these words are by happy accident.
 
 
 # Neat Vocabulary

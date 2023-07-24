@@ -10,23 +10,23 @@ if __FILE__ == $0
   c.draw 'new Alphabet', latin: false
   c.next_line
   c.draw 'new Alphabet', wire: false
-  c.render 'intro.png'
+  c.render? 'intro.png'
 
   c = DrawContext.new
   c.draw [*?a..?z].join()
-  c.render 'Alphabet.png'
+  c.render? 'Alphabet.png'
 
   c = DrawContext.new
   c.draw "A e o u i"
-  c.render 'vowels.png'
+  c.render? 'vowels.png'
 
   c = DrawContext.new
   c.draw "lh dT nc rs"
-  c.render 'common_consonants.png'
+  c.render? 'common_consonants.png'
 
   c = DrawContext.new
   c.draw "ZXJQ"
-  c.render 'rare_consonants.png'
+  c.render? 'rare_consonants.png'
 
   c = DrawContext.new
   c.draw "m w p b"
@@ -34,13 +34,34 @@ if __FILE__ == $0
   c.draw "  v f  "
   c.next_line
   c.draw "  y k g"
-  c.render 'asymmetric_consonants.png'
+  c.render? 'asymmetric_consonants.png'
 
   c = DrawContext.new
   c.draw "ndf mnpfks"
   c.next_line
   c.draw "ctv bcwvyrg"
-  c.render 'confusions.png'
+  c.render? 'confusions.png'
+
+  #def initialize dx: 100, dy: 100, pointsize: 50
+  c = DrawContext.new #dx: 30, dy: 30, pointsize: 30, pen: 3
+  showcase = -> text {
+    c.draw text, latin: false
+    c.draw ' '
+    c.draw text, wire: false
+    c.next_line
+    c.next_line
+  }
+  showcase.call 'laconic'
+  showcase.call 'europe'
+  showcase.call 'eternal'
+  showcase.call 'atoms'
+  showcase.call 'mind'
+  showcase.call 'rare'
+  showcase.call 'thought'
+  showcase.call 'terminology'
+  showcase.call 'enemies'
+  showcase.call 'losses'
+  c.render 'showcase.png'
 
   # naming is hard
   #c = DrawContext.new
@@ -368,7 +389,9 @@ class DrawContext
     @naming << %| -draw "text #{mid} '#{letter}'" |
   end
 
-  def initialize dx: 100, dy: 100, pointsize: 50
+  def initialize dx: 100, dy: 100, pointsize: 50, pen: 5
+    @pen = pen
+
     @dx_scale = dx
     @dy_scale = dy
     @pointsize = pointsize
@@ -438,6 +461,11 @@ class DrawContext
     return letter.downcase
   end
 
+  def render? file, **a
+    return if File.exist? file
+    render file, **a
+  end
+
   def render file, names: true, latin: 'orange'
     width = @used_ends.map { |x| x.x }.max + @gap
     height = @used_ends.map { |x| x.y }.max + @gap
@@ -472,7 +500,7 @@ class DrawContext
       -strokewidth 1
       #{grid * ' '}
       -stroke navy
-      -strokewidth 5
+      -strokewidth #{@pen}
       #{draw}
       #{names && naming}
       #{file.inspect}

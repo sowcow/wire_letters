@@ -61,7 +61,57 @@ if __FILE__ == $0
   showcase.call 'terminology'
   showcase.call 'enemies'
   showcase.call 'losses'
-  c.render 'showcase.png'
+  c.render? 'showcase.png'
+
+  c = DrawContext.new dx: 300, dy: 300
+  c.no_grid!
+
+  draw_logo = -> {
+    symbols = 'nds'.chars
+    symbols.each_with_index { |x, i|
+      c.move
+      c.draw x, latin: false
+      c.next_line 0
+    }
+
+    symbols = 'yvw'.chars
+    symbols.each_with_index { |x, i|
+      c.move
+      c.draw x, latin: false
+      c.next_line 0
+    }
+
+    symbols = 'trc'.chars
+    symbols.each_with_index { |x, i|
+      c.move dx: c.cx
+      c.draw x, latin: false
+      c.next_line 0
+    }
+
+    symbols = 'fkp'.chars
+    symbols.each_with_index { |x, i|
+      c.move dx: c.cx
+      c.draw x, latin: false
+      c.next_line 0
+    }
+  }
+
+  c.use 'strokewidth 15'
+  c.use 'stroke navy'
+  draw_logo.call
+
+  c.use 'strokewidth 2'
+  c.use 'stroke orange'
+  draw_logo.call
+
+  c.use 'strokewidth 0.5'
+  c.use 'stroke yellow'
+  draw_logo.call
+
+  c.use 'trim'
+  c.use '+repage'
+  c.use 'bordercolor white -border 20'
+  c.render 'symbol.png'
 
   # naming is hard
   #c = DrawContext.new
@@ -389,7 +439,7 @@ class DrawContext
     @naming << %| -draw "text #{mid} '#{letter}'" |
   end
 
-  def initialize dx: 100, dy: 100, pointsize: 50, pen: 5
+  def initialize dx: 100, dy: 100, pointsize: 50, pen: 5, gap: nil
     @pen = pen
 
     @dx_scale = dx
@@ -398,7 +448,7 @@ class DrawContext
     @line = 0
 
     # gap is like margin but is from baseline and not letters boundaries so it's size is bigger than the biggest letter dimension
-    @gap = [dx, dy].max * 2 + 10
+    @gap = gap || ([dx, dy].max * 2 + 10)
 
     @used_starts = []
     @used_ends = []
@@ -466,6 +516,21 @@ class DrawContext
     render file, **a
   end
 
+  def use thing
+    unless thing =~ /^\-|\+/
+      thing = "-#{thing}"
+    end
+    @rendering.push thing
+  end
+
+  def use_color color
+    use "stroke #{color}"
+  end
+
+  def no_grid!
+    @no_grid = true
+  end
+
   def render file, names: true, latin: 'orange'
     width = @used_ends.map { |x| x.x }.max + @gap
     height = @used_ends.map { |x| x.y }.max + @gap
@@ -476,17 +541,51 @@ class DrawContext
       b = point.with x: width
       %|-draw "polyline #{a} #{b}"|
     }
+    grid = [] if @no_grid
 
     # imagemagick does not like multiple M's at the start
     while @rendering.count > 1 && @rendering[0] =~ /^M/ && @rendering[1] =~ /^M/
       @rendering.shift
     end
 
-    draw = <<-END.strip.lines.map(&:strip).join(' ')
-      -draw "path '
-        #{ @rendering * ' ' }
-      '"
-    END
+    draw = ''
+    prev_i = 0
+    set_at_i = -10
+    @rendering_groups = @rendering.group_by.with_index { |x, i|
+      if x =~ /^\-|\+/
+        set_at_i = i
+        prev_i = i
+      else
+        if i == set_at_i + 1
+          prev_i += 1
+        end
+        prev_i
+      end
+    }
+    draw = ''
+    @rendering_groups.values.each { |xs|
+      if xs[0] =~ /^\-|\+/
+        xs.each { |x|
+          draw << ' '
+          draw << x
+          draw << ' '
+        }
+      else
+        draw << <<-END.strip.lines.map(&:strip).join(' ')
+          -draw "path '
+            #{ xs * ' ' }
+          '"
+        END
+      end
+    }
+    puts draw
+    #exit 0
+
+    #draw = <<-END.strip.lines.map(&:strip).join(' ')
+    #  -draw "path '
+    #    #{ @rendering * ' ' }
+    #  '"
+    #END
     draw = '' if @rendering.empty?
 
     color = latin

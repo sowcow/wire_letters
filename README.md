@@ -1,3 +1,5 @@
+![Symmetciral composition of letters](symbol.png?raw=true)
+
 ![Intro text: "Wire Letters new Alphabet" rendered in two lines in the script and two lines in Latin](intro.png?raw=true)
 
 # Why
@@ -77,7 +79,7 @@ These are special letters in this script because they require three angular stro
 For most of letters I target one to two distinct hand "gestures" to optimize the speed of execution.
 But since they are rare by frequency of use, they also got this rare exceptional feature in the script.
 
-They are easily memorized initially by considering how capital letters look and top of letters resemblance (in case of Z, X) or where vertical stroke is drawn (in case of J, Q)
+They are easily memorized initially by considering how capital letters look and top of letters resemblance (in case of Z, X) or where the horizontal stroke is drawn (in case of J, Q)
 
 
 ## Asymmetric consonants matrix

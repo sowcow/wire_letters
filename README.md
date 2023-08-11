@@ -1,5 +1,5 @@
 <p align="center">
-  ![Symmetciral composition of letters](symbol.png?raw=true)
+  <img alt='Symmetciral composition of letters' src='symbol.png?raw=true' />
 </p>
 
 ![Intro text: "Wire Letters new Alphabet" rendered in two lines in the script and two lines in Latin](intro.png?raw=true)

@@ -6,12 +6,12 @@
 
 # Why
 
-I tend to want to simplify some letters in writing while I doing random notes on a tablet.
+I tend to want to simplify some letters in writing while I do random notes on a tablet.
 Existing shorthands were invented for different purposes and I wanted some reason-based minimalism without disposing of letters or complex rules of application.
 It has been entertaining and exploratory/creative process with challenges in the beginning.
 
 > I make side notes in these blocks.
-> For example here I can say that it is the second iteration of me doing own cursive.
+> For example here I can say that it is the second iteration of me making own cursive.
 > Also I published it on 22th of July, 2023 and it was still on early stage of practical testing it at the time.
 
 

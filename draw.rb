@@ -118,7 +118,7 @@ if __FILE__ == $0
   
   c.use '-strokewidth 20 -stroke aqua'
   c.next_line 0
-  c.draw "x     q", latin: false
+  c.draw "x   t q", latin: false
 
   c.use '-strokewidth 5 -stroke navy'
   c.next_line 0
@@ -128,7 +128,7 @@ if __FILE__ == $0
   c.use '+repage'
   c.use 'bordercolor white -border 20'
 
-  c.render? 'sequence.png'
+  c.render 'sequence.png'
 
 
   # naming is hard

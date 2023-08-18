@@ -123,12 +123,14 @@ if __FILE__ == $0
   c.use '-strokewidth 5 -stroke navy'
   c.next_line 0
   c.draw "xryvtcq", latin: false
+  c.next_line 0.6
+  c.draw "   w   ", latin: false
 
   c.use 'trim'
   c.use '+repage'
   c.use 'bordercolor white -border 20'
 
-  c.render 'sequence.png'
+  c.render? 'sequence.png'
 
 
   # naming is hard

@@ -4,9 +4,35 @@ $pen = 10
 $width = 200 + gap*2
 $height = 200 + gap*2
 
+used = %w[
+0-0
+1-1
+2-12
+2-15
+2-25
+2-37
+2-38
+2-40
+2-3
+2-35
+].map { |x| "#{x}.png" }
+
+duplicates = %w[
+2-1
+2-28
+2-0
+2-2
+2-9
+2-14
+2-20
+2-22
+2-36
+2-39
+].map { |x| "#{x}.png" }
+
 points = 3.times.map { |y|
   3.times.map { |x|
-    Point[x * step + gap, $height - (y * step + gap)]
+    Point[x * step + gap, (y * step + gap)]
   }
 }.flatten
 
@@ -27,18 +53,23 @@ system 'rm *.png'
     .select { |xs| xs.length == 0 || xs.find { |x| $ceiling.include?(x) }}
     .each_with_index { |xs, i|
     path = make_path xs
-    draw path, "#{len}-#{i}.png"
+    file = "#{len}-#{i}.png"
+    next if duplicates.include? file
+    draw path, file, used.include?(file)
   }
 }
-system 'montage *.png ../enumeration.png'
+files = Dir['*.png'].sort_by { |x| x.scan(/\d+/).map &:to_i } * ' '
+system %'montage #{files} ../enumeration.png'
 
 BEGIN {
   def make_path points
     [$start, *points, $finish]
   end
 
-  def draw path, file
+  def draw path, file, highlight = false
     draw_path = to_draw path
+
+    color = highlight ? '"navy"' : '"rgba(0,128,255, 0.5)"'
 
     command = <<-END.strip.lines.map(&:strip).join(' ')
       convert
@@ -50,7 +81,7 @@ BEGIN {
       -strokewidth 1
       #{$draw_grids * ' '}
 
-      -stroke "rgba(0,128,255, 1)"
+      -stroke #{color}
       -strokewidth #{$pen}
       #{draw_path}
 

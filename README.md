@@ -128,6 +128,10 @@ Hereby this script/alphabet structure has been described.
 
 ![Letters that look alike put together: n,d,f; m,n,p,f,k,s; c,t,v; b,c,w,v,y,r,g](confusions.png?raw=true)
 
+<p align="center">
+  <img alt='Sequence of letters transforming into each-other' src='sequence.png?raw=true' />
+</p>
+
 In potential confusions sequences here neighboring letters should be different-enough from each-other.
 So as long as the idea of the letter is kept (like "diagonal arc to top-left" for letter `m`) individual choices of variations may be added to keep the visual distance between neighbors here.
 

@@ -111,7 +111,25 @@ if __FILE__ == $0
   c.use 'trim'
   c.use '+repage'
   c.use 'bordercolor white -border 20'
-  c.render 'symbol.png'
+  c.render? 'symbol.png'
+
+  c = DrawContext.new
+  c.no_grid!
+  
+  c.use '-strokewidth 20 -stroke aqua'
+  c.next_line 0
+  c.draw "x     q", latin: false
+
+  c.use '-strokewidth 5 -stroke navy'
+  c.next_line 0
+  c.draw "xryvtcq", latin: false
+
+  c.use 'trim'
+  c.use '+repage'
+  c.use 'bordercolor white -border 20'
+
+  c.render? 'sequence.png'
+
 
   # naming is hard
   #c = DrawContext.new

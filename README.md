@@ -135,7 +135,7 @@ So as long as the idea of the letter is kept (like "diagonal arc to top-left" fo
 For example here I have `m` looking like a leaf while in actual use it is more rounded to keep it simple two-strokes and not opening the three-strokes door too much.
 But these variations are not decided and are subject to choice and experimentation.
 
-# Advanced: visuals: selection in context of linear enumeration of options
+# Advanced: shape selection in the context of linear enumeration of options
 
 <p align="center">
   <img alt='Sequence of letters transforming into each-other' src='sequence.png?raw=true' />

@@ -145,6 +145,13 @@ But these variations are not decided and are subject to choice and experimentati
   <img alt='Enumeration of options' src='enumeration.png?raw=true' />
 </p>
 
+- full height has to be employed for equal letter height
+- if the letter is not symmetrical then full diagonal has to be employed/implied
+
+> This table shows potential options for assymetric `T`s but these I considered before rendering the table; while it also shows that simplified shape at (2,2), I assume it is just another way to render `y`
+
+> The angular/linear letters "skeleton" was extracted way later after the completion of the script while the idea of that has sneaked-in earlier in the form of rare consonants shape!
+
 # Also
 
 To print a short file in this script (tested on Linux only):

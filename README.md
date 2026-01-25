@@ -4,6 +4,14 @@
 
 ![Intro text: "Wire Letters new Alphabet" rendered in two lines in the script and two lines in Latin](intro.png?raw=true)
 
+# UPD
+
+There are different supporting materials for learning this script:
+- there is guide pdf that showcases different combinations of letters: `TODO`
+- there is Pope's Illiad in pdf format (tested on RM device): `TODO`
+- https://sowcow.github.io/typing-speed/ here pressing enter toggles the font from latin script to wire letters, by running the test one can objectively measure speed of reading those letters against the baseline
+- there is `otf.otf` font file that knows `a..z` letters, it made those supporting materials possible
+
 # Why
 
 I tend to want to simplify some letters in writing while I do random notes on a tablet.

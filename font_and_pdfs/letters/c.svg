@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -200.0 1000 400.0" stroke-linejoin="round" stroke-linecap="round">
+  <desc>
+{
+  "start_x": 0,
+  "start_y": 0,
+  "end_x": 1000,
+  "end_y": 1000
+}
+  </desc>
+  <path d="M 0,0 C 0,1000 450.0,1000 500.0,1000 C 550.0,1000 1000,1000 1000,0" fill="none" stroke="black" stroke-width="50"/>
+</svg>

@@ -1,0 +1,78 @@
+# - there is one pixel bullshit up-down shifts in the font
+#   but on big pointsize-s they are not visible
+# - pdfs are the way since they manage to show font correctly on RM
+
+task :default do
+  sh 'ruby run.rb'
+  sh 'fontforge -script forge.py'
+  sh 'rake preview'
+end
+
+
+task :preview do
+  letters = [*?a..?z].map { |x| "#{x}h" }.join
+  sh <<~END.lines.map(&:strip).join(' ')
+    magick -background white -fill black
+      -font otf.otf -pointsize 100 -size 10000x10000
+      label:#{letters.inspect}
+      
+      -trim
+      +repage
+      -border 50x50
+
+      baseline.png  
+  END
+
+  letters = [*?a..?z].map { |x| "#{x}h" }.join
+  sh <<~END.lines.map(&:strip).join(' ')
+    magick -background white -fill black
+      -font otf.otf -pointsize 100 -size 10000x10000
+      label:"abcdefghijklmnopqrstuvwxyz"
+      
+      -trim
+      +repage
+      -border 50x50
+
+      alphabet.png  
+  END
+end
+
+task :guide do
+  make_ebooks 'guide.html'
+end
+
+task :iliad do
+  make_ebooks 'Iliad.html', landscape: true
+end
+
+# assuming landscape orientation
+MAIN_DIM = 239
+CROSS_DIM = 180
+
+def make_ebooks html, landscape: false
+  name = File.basename html, '.html'
+
+  # sh <<~END.lines.map(&:strip).join(' ')
+  #   ebook-convert #{html} #{name}.epub --embed-all-fonts
+  # END
+
+  # [2].each { |x| # 1 is too fucked to even keep it
+  # [3, 4, 5].each { |x| # 4 is funny
+  # [6, 7, 8, 9].each { |x|
+    size = landscape ? "--custom-size #{MAIN_DIM}x#{CROSS_DIM}" : "--custom-size #{CROSS_DIM}x#{MAIN_DIM}";
+    sh <<~END.lines.map(&:strip).join(' ')
+      ebook-convert #{html} #{name}-#{x}.pdf --font-size #{x}
+        #{size}
+        --unit millimeter
+        --pdf-page-margin-left=0
+        --pdf-page-margin-right=0
+        --pdf-page-margin-top=0
+        --pdf-page-margin-bottom=0        
+        --level1-toc="//h:h1"
+        --level2-toc="//h:h2"
+        --level3-toc="//h:h3"
+        --toc-threshold=0
+        --pdf-page-numbers
+    END
+  }
+end

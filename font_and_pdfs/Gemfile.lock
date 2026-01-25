@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    any_ascii (0.3.3)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  any_ascii (~> 0.3.3)
+
+CHECKSUMS
+  any_ascii (0.3.3) sha256=9bba37e4aadc7c57bc29e4bae520418416d1b69ea167d04f2aeaf9c07166f724
+
+BUNDLED WITH
+  4.0.3

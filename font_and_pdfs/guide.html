@@ -1,0 +1,3957 @@
+<style>@font-face {
+  font-family: 'otf';
+  src: url(data:font/opentype;base64,T1RUTwAKAIAAAwAgQ0ZGIF08mI4AAAUQAAAexEZGVE2wsUVmAAAj1AAAABxPUy8yEDsXJQAAARAAAABgY21hcGoiXfkAAAOkAAABSmhlYWQtuRwpAAAArAAAADZoaGVhDQL7egAAAOQAAAAkaG10eEir/KEAACPwAAAAaG1heHAAHFAAAAABCAAAAAZuYW1l3A/0pgAAAXAAAAIxcG9zdP/fABgAAATwAAAAIAABAAAAAQAA0RbE618PPPUACwGQAAAAAOWbbgYAAAAA5ZtuBv9i+N8EAQixAAAACAACAAAAAAAAAAEAAAl5+BcAJAPo/2L/YgQBAAEAAAAAAAAAAAAAAAAAAAAYAABQAAAcAAAABAOBAZAABQAAAQQBGAAAADgBBAEYAAAAwAATAGcAAAIABQMAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAACAAegDI/zgAJAl5B+kAAAABAAAAAALVAAAAAAAgAAEAAAAOAK4AAQAAAAAAAAAdADwAAQAAAAAAAQAHAGoAAQAAAAAAAgAHAIIAAQAAAAAAAwArAOIAAQAAAAAABAAPAS4AAQAAAAAABQAPAV4AAQAAAAAABgAGAXwAAwABBAkAAAA6AAAAAwABBAkAAQAOAFoAAwABBAkAAgAOAHIAAwABBAkAAwBWAIoAAwABBAkABAAeAQ4AAwABBAkABQAeAT4AAwABBAkABgAMAW4AQwBvAHAAeQByAGkAZwBoAHQAIAAoAGMAKQAgADIAMAAyADYALAAgAEEAbABlAHgAYQBuAGQAZQByAABDb3B5cmlnaHQgKGMpIDIwMjYsIEFsZXhhbmRlcgAATQB5ACAARgBvAG4AdAAATXkgRm9udAAAUgBlAGcAdQBsAGEAcgAAUmVndWxhcgAARgBvAG4AdABGAG8AcgBnAGUAIAAyAC4AMAAgADoAIABNAHkAIABGAG8AbgB0ACAAUgBlAGcAdQBsAGEAcgAgADoAIAAyADUALQAxAC0AMgAwADIANgAARm9udEZvcmdlIDIuMCA6IE15IEZvbnQgUmVndWxhciA6IDI1LTEtMjAyNgAATQB5ACAARgBvAG4AdAAgAFIAZQBnAHUAbABhAHIAAE15IEZvbnQgUmVndWxhcgAAVgBlAHIAcwBpAG8AbgAgADAAMAAxAC4AMAAwADAAAFZlcnNpb24gMDAxLjAwMAAATQB5AEYAbwBuAHQAAE15Rm9udAAAAAAAAAADAAAAAwAAABwAAQAAAAAARAADAAEAAAAcAAQAKAAAAAYABAABAAIAIAB6//8AAAAgAGH////h/6EAAQAAAAAAAAAAAQYAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAA/9wAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEBAABAQEHTXlGb250AAECAAEARPgPAPgbAfgcAvgdA/gYBFsMA6MMBB4KACX/i4seCgAl/4uLDAf7Mxz43/qWHAixBRwAmQ8cAAAQHADQERwAKBwePhIAAwIAAQAeAC0ANENvcHlyaWdodCAoYykgMjAyNiwgQWxleGFuZGVyTXkgRm9udCBSZWd1bGFyTXkgRm9udAAAAAABAEIAQwBEAEUARgBHAEgASQBKAEsATABNAE4ATwBQAFEAUgBTAFQAVQBWAFcAWABZAFoAWwAcAgABACAAIwFYArsDrwRqBZoGxwgeCCgJXQnzC1YLYAzfDdUPMRC5EUoTMhUtFeEXEBg3GbQawhwZHTL2i5/onwGfn/cMnwOfFvc09xn7NAaf+wUV6PcMLgcO+XUO9v8DMESAdwFy91wV/wANzED/AAszwP8ACzPA/wANzEAe/wAFQID/ADCCgAX/AERlwP8BVfwA/wABVQD/BhQggP8AAATA/wAb/wAI/wAPa4D/AAxCwP8ACfaA/wAMvUD/AA3MQP8ACzPA///0zED///IzwB6Li/8AALrA//nSmgD/AEUEwP/+puiA/wAGTcD//+B7QP8ABXmA///yacD/AALGAP//+s5A/wAJMsD///xOwP8ABoCA///2/oCL///1fQCL///pfoD//+SXwP//9CVA///rRwD/ABKZwP//6xeA/wASxID//9+DAP8AO1XA///ohsD/AinswP//8SvA//6iEUD//+t/gP//Mz8A///j98D//8XAQAj//+pfAP//0w6A///X/gD/AA+YQIv/ABoEQAgO/c3/ADI0QP8DtcvAvQFyvf8DtThA/wAyx8AD+pX9tBX///IzwP//9MxA///0zED///IzwP/8qdeA//9VKID/AohQgP8BeK+A/wANzED/AAszwP8ACzPA/wANzED/AA3MQP8ACzPA///0zED///IzwB6L///UioD/AAAqQP//OSVA/wBVuUD//zG6wP8AxaoA//4kXsD/AcInQP//0NrA/wDXg4D///yQQP//+67A/wBbGUD//+PRAP8BP76A//9IDAD/APVFQP//lEVA/wCPo8D//1/HwP8AddgA//8M2oD/ACBrgP//88ZA/wABoUD///aOQP8ACnsAi/8ADKtACP8ADcxA/wALM8D/AAszwP8ADcxAHvmCBv8ADcxA/wALM8D///TMQP//8jPA///yM8D///TMQP//9MxA///yM8Af//3b5IAG/wIx4sD//yguwP8ACzjA//0oOACL///gmUAIDv3NvQFyvfpKvQP4iP2bFf8AGOlAi/8AjIbA///+icD/AHqGwP8Aou9A/wBih8D/AIMGQP8AWIGA/wDxLsCL/wG5UgAI/wANzED/AAszwP8ACzPA/wANzED/AA3MQP8ACzPA///0zED///IzwP/8QZ8A//5lNUD//71hAP//jcrAHv//4VsAi///Xg6A/wABdkD//3ijwP8AtABA//+UOED/AI9TAP//prqA/wD8pQCL/wG/kYAI/wANzED/AAszwP8ACzPA/wANzED/AA3MQP8ACzPA///0zED///IzwP/824VA/wEmMQD//1V6wP8AtM8AHg7/BHgYAHcB///poAD/ANMoABX4iPp8Bf8ACTIA/wASZAD/ABpcAP/////A/wAJMgD//+2cQAj4iP58Bf8AAa4A///8pAD/AADyAP///DYAi///+/4Ai///5dwA///cVwD///eOAP//9EkA/wAXbgAI//4iYAD/A7tAAP/+ImAA//xEwAAF///75gD///fLwP//94RA///6XED///Y1wIv//+1rgIv///P0gP8AE6gA/wAIQAD/ABCAAAgOLv8DAZYAdv8FkmoAvQH//2GqwL3/AFNVQL3/AFNVQL0DFDgcCH8E///O4cD//8TJAP//4WtA//8PSQAfi///ZFBA/wAYKMD//ywggP8AG9uA//8M5cD/ABNaQP//Vx2A/wAVGwD//0fxQP8AD9vA//9AfID/ACdrAP8B3AfA/wBE6kD/AZqyQIv/AQxkQAj/APCpQP//xNCA/wAeooD//87aQB7//2GqwP/+8LRAFf8AhIvA/wAN44D/ALzAAP8AkHHA/wCQcQD/AA3kQP//Q0HA//97coAei//+ir0A//96qsD//WbSwIv//Wa8AAj///IzwP//9MxA///0zED///IzwP//8jPA///0zED/AAszwP8ADcxAHov/AplEAP//eqrA/wKZLUCL/wF1QwAIDv8DBDLAdwH/Al+MAP8DBDLAFf/9siCA//2yIMAF///7ecD///t5gP//+cAA///9MwD///kZwIv//+ndwIv///TDAP8AGvoA/wAPssD/AA+ygAj/ApuWAP8Cm5ZABf8APA+A/wBvUkD/AHFuQP8AblCA/wCiSMD/AHGZQP8ABA5A/wAC1sD/AATvgP8AAaqA/wAFUkCL/wAWIkCL/wALPQD//+UGAP//8E1A///wTYAI//650kD//rnSQAX//6geQP//WDsA/wAbusD//zgyAP8BfvhA//7z7AD/AAZ1wP//+3pA/wAEOkD///iBAIv///eGAIv//+vWgP//6SmA///0IoD//++GgP8AC4hA//76jkD/ALcDAP//XeuA/wDBGcD/AC1iQP8A2JTACA79zf8AM1RA/wO0q8C9Af8BT1nA//+b/4AV/wKqUsD//VWtAAX/AA+ywP//8E2A///0wwD//+UGAP//6d3Ai//9erjAi///DdYA/wGZo4D/AKBlwP8BMw7ACP/+3V8A/wEioUAF///7eYD/AASGQP///TMA/wAGQACL/wAG5kCL/wAWIkD/ABr6AP8ACz0A/wAPsoD///BNQAj/ARm0QP/+5kwABf8AOjcA/wBWRkD/AFv1gP8ASwaA/wB8LsD/ADO+QP8AcqQA/wAvxID/AI4kgP8AHDgA/wCpe4CLCP8ADcxA/wALM8D///TMQP//8jPA///yM8D///TMQP//9MxA///yM8Af//6pgACL//8hYwD//4h8QP//nHbA//9kg0AI/wJa+MD//V5UwBX//YvYQP8CdCfABf//gpxA//71j4D/ANHOgP/+rhPA/wIfvQD//+g1AAgO90O9Afd1BCAKDvb/ACSjAP8AxKsAFf8AGunA///IE0D/ABUDgP//Pz8A/wAPb8D//pO+QP8ADtRA/wFd7sD/ABSAgP8AzMEA/wAcCED/ADo/wP8AFaEA/wAs8YD/ACgCAP//8GfAi///5fvAi///9X0A///5f4D///b+gP//9s1A///8TsD///8qwP///nDA///+xoD///1jgP///nGA///7zoD//7gHAP//PhsA///3bUD/+j5AAP///9xA//7TOAAI///yM8D///TMQP//9MxA///yM8D///IzwP//9MxA/wALM8D/AA3MQB6Li////0VA/wYtZgD//7r7QP8BWReACP//+r+A/wAwgoAF///yM8D///TMQP8ACzPA/wANzEAfi/8AGgRA/wAoAgD/AA+YQP8AFaEA///TDoAIDhwEl3cBcvdcFfp8B/8ADcxA/wALM8D/AAszwP8ADcxAHvp8Bv8ADcxA/wALM8D///TMQP//8jPAH/58B///8jPA///0zED///TMQP//8jPA///yM8D///TMQP8ACzPA/wANzEAe+mP+Sv5jB///8jPA///0zED///TMQP//8jPA///yM8D///TMQP8ACzPA/wANzEAeDvdDvf8A7weAd/8AenyAdv8CdCfA/wAzVEAB/wE2KsD/AiGEABX/AnQnwP8CdCfABf/94EUA///oNUD//y4uwP/+rhUA/wB9ZID//vWOAAj///U2AP//roOAFf/+5kvA//7mTAAF///7ecD///t5gP//+cAA///9MwD///kZwIv//+ndwIv///TDAP8AGvoA/wAPssD/AA+ygAj/ASKhAP8BIqFABf//X5qA/wEzDoD/APIpgP8BmaPA/wKFR4CL/wAWIkCL/wALPQD//+UGAP//8E1A///wTYAI//1VrUD//VWtAAX/ADOswP//r0dA/wBVTID//7gigP8AeJuA///Nv0D/AGuVAP//0yyA/wCHosD//+SqAP8Ao9nAiwj/AA3MQP8ACzPA///0zED///IzwP//8jPA///0zED///TMQP//8jPAH//+mgmAi///F3eA/wB90oD//5HfwP8AozUACA73Q70B93UEIAoO/wSWzgD/ADIyAAFy/wAyM0D/A7XMwL0D+pX3XBX///IzwP//9MxA///0zED///IzwP//8jPA///0zED/AAszwP8ADcxAHov/ACt1gP///9XA/wDG2sD//6pGwP8AzkVA//86PoD/AdvZwP/+PYMA/wAvAsD//yhVQP8AA1wA/wAKIYD//YbcgP8BiQLA//9e7YD/ANW9wP//qoEA/wBUXsD//95AQP8AMIwA///slQCL///WEcAI///yM8D///TMQP//9MxA///yM8Ae/YIG///yM8D///TMQP8ACzPA/wANzED/AA3MQP8ACzPA/wALM8D/AA3MQB//AqjPgAb///AKwP8ABxjA///skID/AAfOgP//6iAA/wAIv8D//6ImQP8AJYqA//91JgD/ADdLAP//grGA/wBvOYD//2LWAP8Ai4CA//96oYD/AOKfwIv/AX0pwAj/AA3MQP8ACzPA/wALM8D/AA3MQP8DViiA/wCq14D//XevgP/+h1CAHg4cBJe9AXK9+kq9A/iIHATJFf8AHqUAi/8AofGA///+icD/AIdcQP//S//A/wBrx8D//3CtAP8AWUWA//8DWwCL//5AboAI///yM8D///TMQP//9MxA///yM8D///IzwP//9MxA/wALM8D/AA3MQP8DJHrA//7ZzwD/AKqFQP//SzEAHv//5xbAi///c3lA/wABdkD//4V5QP//XRDA//+deED//3z5wP//p36A//8O0UCL//5GrgAI///yM8D///TMQP//9MxA///yM8D///IzwP//9MxA/wALM8D/AA3MQP8DvmEA/wGaysD/AEKfAP8AcjVAHg721r33Kr0Bcr33Kr0DpPdcFf//1ptA/wAhm0D//95kwP8AKWTA/wApZMD/ACGbQP8AIZtA/wApZMD/AClkwP//3mTA/wAhm0D//9abQP//1ptA///eZMD//95kwP//1ptAHlkW/wBE/UD/ADgCwP8AOALA/wBE/UD/AET9QP8AOALA///H/UD//7sCwP//uwLA///H/UD//8f9QP//uwLA//+7AsD//8f9QP8AOALA/wBE/UAevRb//9aQAP8AIZAA///ecAD/AClwAP8AKXAA/wAhkAD/ACGQAP8AKXAA/wApcAD//95wAP8AIZAA///WkAD//9aQAP//3nAA///ecAD//9aQAB5ZFv8ARQUA/wA3+wD/ADf7AP8ARQUA/wBFBQD/ADf7AP//yAUA//+6+wD//7r7AP//yAUA///IBQD//7r7AP//uvsA///IBQD/ADf7AP8ARQUAHg73Q73/A7XLwP8AMjRAAXK9/wO1OED/ADLHwAP/AcPkgPd1Ff8CJBuABv8ADcxA/wALM8D///TMQP//8jPA///yM8D///TMQP//9MxA///yM8Af/YIG///yM8D///TMQP8ACzPA/wANzEAfi/8ADKtA/wAJccD/AAp7AP8ADDnA/wABoUD/APMlgP8AIGuA/wCgOED/AHXYAP8Aa7rA/wCPo8D/ALf0AP8A9UVA/wAcLwD/AT++gP8ABFFA/wBbGUD//H4ygP//8a+A///MlUD//QH8QIv//z2IgAj///IzwP//9MxA///0zED///IzwP//8jPA///0zED/AAszwP8ADcxAHov/AC1uQP///9XA/wDOFUD/AFncAP8A2DnA/wAx88D/AHgywP8AThVA/wB7zwD/AHnYwP8AZFdA/wCYccD/AH2JwP8A25vA/wBXYAD/ATlfAIv/AA3MQIv/AAszwP//9MxAi///8jPAi///4ZgA///1LAD//SdgAP/9zbiA//8oCAAIDvpj/ZsV+mMH/wANzED/AAszwP8ACzPA/wANzED/AA3MQP8ACzPA///0zED///IzwB7+fAf///IzwP//9MxA///0zED///IzwB7+fAb///IzwP//9MxA/wALM8D/AA3MQB/6fAf/AA3MQP8ACzPA/wALM8D/AA3MQP8ADcxA/wALM8D///TMQP//8jPAHv5jBw79zb36Sr0B/wAvH0C9A/iI///dzAAV//8cK8D//1pdgP//UPOA//8lEgCL//9nncCL//9ZEgD/ANXEgP//2xTA/wC9HECL/wCrcYCL/wCNOsD/AB58QP8AO3pA/wBN2sD/AG+ywP8AkjXA//8ujcD/AR7AgP/+7ZkA/wDHfsAI/wA9YEAE/wBCAID/AC3MQP8ARKcA/wAoU8D/AEP+wP8AICaA/wBn7wD/ADEkgP8AZp+A/wAeaMD/AFrLQIsI/wANzED/AAszwP//9MxA///yM8D///IzwP//9MxA///0zED///IzwB///1K3gIv//zXawP//hDSA//+upMD//8jrwP8BGxlA//8ti8D/AN1rgP/+zyaA//94LAD//040QP//qufA//+QnQD//z4sQP//71xA//97BECL//6FDsCL//+2EID/AI6TgIv/AG9FwIv/AEDTwP8AGMdA/wBFFUD/ACiAgP8ARagA/wBiJ4D/AKjPwP8AqNGA/wCJWoD/AE1pAP8AOYvACP//WJFA/wBxWkD//1lqAP8AQYWA//+FO8CLCP//8jPA///0zED/AAszwP8ADcxA/wANzED/AAszwP8ACzPA/wANzEAf/wC/7wCL/wDXvwD//3o7wP8AXFIA//+/8IAIDvdDvf8Ak9PAd/8AZmBAdv8C5MwAvQH/A4bgwL0D+Ij/AbI0ABX/AOPUQP8ApaKA/wCvDID/ANruAIv/AJhiQIv/AKbuAP//KjuA/wAk60D//0LjwIv//1SOgIv//3LFQP//4YPA///EhcD//7IlQP//kE1A//9tykD/ANFyQP/+4T+A/wESZwD//ziBQAj//9TJAP//4avAFf/+5ObA/wDSdED//yKUgP8BMNmA/wCH1AD/ALHLwP8AVRhA/wBvYwD/AMHTwP8AEKPA/wCE+8CL/wF68UCL/wBJ74D//3FsgIv//5C6QIv//78sQP//5zjA//+66sD//9d/gP//ulgA//+d2ID//1cwQP//Vy6A//92pYD//7KXAP//xnRA/wCnbsD//46lwP8AppYA//++eoD/AHrEQIsI/wANzED/AAszwP//9MxA///yM8D///IzwP//9MxA///0zED///IzwB///0ARAIv//yhBAP8AhcRA//+jrgD/AEAPgP//vf+A///SM8D//7tZAP//16xA//+8AUD//9/ZgP//mBEA///O24D//5lggP//4ZdA//+lNMCLCP//8jPA///0zED/AAszwP8ADcxA/wANzED/AAszwP8ACzPA/wANzEAf/wCtSICL/wDKJUD/AHvLgP8AUVtA/wA3FEAIDv8AFmAA/wDTKAAV/wHdoAD//ETAAP8B3aAA/wO7QAAF/wAEGgD/AAg0QP8ACHvA/wAFo8D/AAnKQIv/ABKUgIv/AAwLgP//7FgA///3wAD//++AAAj8iP58Bf//9s4A///tnAD//+WkAP8AAABA///2zgD/ABJjwAj8iPp8Bf///lIA/wADXAD///8OAP8AA8oAi/8ABAIAi/8AGiQA/wAjqQD/AAhyAP8AC7cA///okgAIDi4c+N+9Af//YarAvf8AU1VAvf8AU1VAvQMUcP8AnlVA//ogS8AV//97dED///IcgP//Q0AA//9vjkD//2+PAP//8hvA/wC8vkD/AISNgB6L/wF1QwD/AIVVQP8CmS1Ai/8CmUQACP8ADcxA/wALM8D/AAszwP8ADcxA/wANzED/AAszwP//9MxA///yM8Aei//9ZrwA/wCFVUD//WbSwIv//oq9AAj//2GqwP/+8LRAFf8AMR5A/wA7NwD/AB6UwP8A8LcAH4v/AJuvwP//59dA/wDT34D//+QkgP8A8xpA///spcD/AKjigP//6uUA/wC4DsD///AkQP8Av4OA///YlQD//iP4QP//uxXA//5lTcCL//7zm8AI//8PVsD/ADsvgP//4V2A/wAxJcAeDv8ADlAA/wDcfsAV/wEFccD//0j9AP8AohSA//8+5kD//9KdwP//J2tACP8CTd+A/wJN30AF/wAEhkD/AASGgP8ABkAA/wACzQD/AAbmQIv/ABYiQIv/AAs9AP//5QYA///wTUD///BNgAj//WRqAP/9ZGnABf//w/CA//+QrcD//46RwP//ka+A//9dt0D//45mwP//+/HA///9KUD///sQgP///lWA///6rcCL///p3cCL///0wwD/ABr6AP8AD7LA/wAPsoAI/wFGLcD/AUYtwAX/AFfhwP8Ap8UA///kRUD/AMfOAP/+gQfA/wEMFAD///mKQP8ABIXA///7xcD/AAd/AIv/AAh6AIv/ABQpgP8AFtaA/wAL3YD/ABB5gP//9HfACA79zf8AMjIAAXL/ADIzQP8DtczAvQP3dQT5ggb/AA3MQP8ACzPA///0zED///IzwB+L///WEcD//890AP//7JUA//+roUD//95AQP//KkPA//+qgcD//nb7wP//Xu3A///13oD//YbbgP8DglrA/wAN/oD/ADNyAP8C/knAi/8AwoXACP8ADcxA/wALM8D/AAszwP8ADcxA/wANzED/AAszwP//9MxA///yM8Aei///0pHA/wAAKkD//zHqwP//piQA//8nxkD//84MQP//h81A//+x6sD//4QxAP//hidA//+bqMD//2eOQP//gnZA//8kZED//6igAP/+xqEAi///8jPAi///9MxA/wALM8CL/wANzECL/wKz7kD/AbUkwP8ArtuA/wDTZgD/AFSPQP8AFeAA/wAIv8D/ABNvgP8AB86A/wAP9UD/AAcYwAj//VcwgAb///IzwP//9MxA/wALM8D/AA3MQP8ADcxA/wALM8D/AAszwP8ADcxAHw7//+5TgP/88ayAFf8B4lNA/wHiU4D//h2swP8B4lOABf//+3mA/wAEhkD///0zAP8ABkAAi/8ABuZAi/8AFiJA/wAa+gD/AAs9AP8AD7KA///wTUAI/wHiU4D//h2swP8B4lOA/wHiU0AF/wAEhkD/AASGgP8ABkAA/wACzQD/AAbmQIv/ABYiQIv/AAs9AP//5QYA///wTUD///BNgAj//h2swP/+HayA/wHiU0D//h2sgAX/AA+ywP//8E2A///0wwD//+UGAP//6d3Aiwj+fAb//+ndwIv///TDAP8AGvoA/wAPssD/AA+ygAj/A71TQP8AB1OAFf/+SFlA/wG3psD//khZQP/+SFlABQ79zf8AM1RA/wO0q8C9Af8CsdVA//9ufAAV//2L2ED//YvYQAX/Ah+7AP8AF8rA/wDR0UD/AVHrAP//gpuA/wEKcgAI/wAKygD/AFF8gBX/ARm0QP8BGbQABf8ABIZA/wAEhoD/AAZAAP8AAs0A/wAG5kCL/wAWIkCL/wALPQD//+UGAP//8E1A///wTYAI//7dXwD//t1ewAX/AKBlgP/+zPGA//8N1oD//mZcQP/9eriAi///6d3Ai///9MMA/wAa+gD/AA+ywP8AD7KACP8CqlLA/wKqUwAF///MU0D/AFC4wP//qrOA/wBH3YD//4dkgP8AMkDA//+UawD/ACzTgP//eF1A/wAbVgD//1wmQIsI///yM8D///TMQP8ACzPA/wANzED/AA3MQP8ACzPA/wALM8D/AA3MQB//AWX2gIv/AOiIgP//gi2A/wBuIED//1zLAAgO/wL0WUB2/wG3psB3Af8APFlAHASXFf8Bt6bA//5IWUD/AbemwP8Bt6bABf8AKqzA//wfU4AV//4drID/AeJTQP/+HayA//4drMAF///7ecD///t5gP//+cAA///9MwD///kZwIv//+ndwIv///TDAP8AGvoA/wAPssD/AA+ygAj/AeJTQP8B4lOA//4drMD/AeJTgAX///BNQP8AD7KA/wALPQD/ABr6AP8AFiJAiwj6fAb/ABYiQIv/AAs9AP//5QYA///wTUD///BNgAj//h2swP/+HayA/wHiU0D//h2sgAX/AASGgP//+3nA/wACzQD///nAAIv///kZwIv//+ndwP//5QYA///0wwD///BNgP8AD7LACA76fBToFdbvvfp8/nz6fAb9zYsHiwwJiwwKvQq9jAwMvQu9DA0cACgTAAEBAVr6fAb/AA3MQP8ACzPA///0zED///IzwP//8jPA///0zED///TMQP//8jPAH/58Bv//8jPA///0zED/AAszwP8ADcxA/wANzED/AAszwP8ACzPA/wANzEAfCwAAAAEAAAAA5XppWQAAAADlm24GAAAAAOWbbgYAyAAAAz4AAADI/+cD6P/nA+j/5wPo/+cAAP9iA+j/6APo/+cD6P/nAMj/5wPo/+cD6P/oA+j/5wPo/+cD6P/nAMj/5wPo/+cD6P/nA+j/5wPo/+cD6P/nAAD/YgPo/+f/5//n/+f/6A==) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, * {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  /* font baseline accounting for */
+  line-height: 10em;
+  margin: 1px;
+  white-space: pre-wrap;
+
+  font-family: 'otf', sans-serif;
+  font-size: 16px;
+}
+
+*:not(.skip-font) {
+  font-family: 'otf', sans-serif;
+  font-size: 16px;
+}
+.skip-font {
+  font-family: monospace;
+}
+
+</style>
+
+<h1 id="a-a">A: a</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">abraham</span></td>
+      <td>abraham</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">acquaintance</span></td>
+      <td>acquaintance</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">australia</span></td>
+      <td>australia</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">available</span></td>
+      <td>available</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">away</span></td>
+      <td>away</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">breakfast</span></td>
+      <td>breakfast</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">caesar</span></td>
+      <td>caesar</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">canada</span></td>
+      <td>canada</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">extraordinary</span></td>
+      <td>extraordinary</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">japan</span></td>
+      <td>japan</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">magazine</span></td>
+      <td>magazine</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">organization</span></td>
+      <td>organization</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">remarkable</span></td>
+      <td>remarkable</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">royal</span></td>
+      <td>royal</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">wax</span></td>
+      <td>wax</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>available</td>
+      <td><span class="skip-font">~available</span></td>
+    </tr>
+    <tr>
+      <td>acquaintance</td>
+      <td><span class="skip-font">~australia</span></td>
+    </tr>
+    <tr>
+      <td>abraham</td>
+      <td><span class="skip-font">~acquaintance</span></td>
+    </tr>
+    <tr>
+      <td>australia</td>
+      <td><span class="skip-font">~abraham</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>away</td>
+      <td><span class="skip-font">~away</span></td>
+    </tr>
+    <tr>
+      <td>caesar</td>
+      <td><span class="skip-font">~breakfast</span></td>
+    </tr>
+    <tr>
+      <td>breakfast</td>
+      <td><span class="skip-font">~canada</span></td>
+    </tr>
+    <tr>
+      <td>canada</td>
+      <td><span class="skip-font">~caesar</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>magazine</td>
+      <td><span class="skip-font">~magazine</span></td>
+    </tr>
+    <tr>
+      <td>japan</td>
+      <td><span class="skip-font">~extraordinary</span></td>
+    </tr>
+    <tr>
+      <td>organization</td>
+      <td><span class="skip-font">~organization</span></td>
+    </tr>
+    <tr>
+      <td>extraordinary</td>
+      <td><span class="skip-font">~japan</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>wax</td>
+      <td><span class="skip-font">~wax</span></td>
+    </tr>
+    <tr>
+      <td>royal</td>
+      <td><span class="skip-font">~royal</span></td>
+    </tr>
+    <tr>
+      <td>remarkable</td>
+      <td><span class="skip-font">~remarkable</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="b-b">B: b</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">abbey</span></td>
+      <td>abbey</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">absorbed</span></td>
+      <td>absorbed</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">albert</span></td>
+      <td>albert</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">baby</span></td>
+      <td>baby</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">bible</span></td>
+      <td>bible</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">debt</span></td>
+      <td>debt</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">edinburgh</span></td>
+      <td>edinburgh</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">embrace</span></td>
+      <td>embrace</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">husband</span></td>
+      <td>husband</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">maybe</span></td>
+      <td>maybe</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">neighbor</span></td>
+      <td>neighbor</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">obs</span></td>
+      <td>obs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">obvious</span></td>
+      <td>obvious</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">subject</span></td>
+      <td>subject</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">submit</span></td>
+      <td>submit</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>albert</td>
+      <td><span class="skip-font">~albert</span></td>
+    </tr>
+    <tr>
+      <td>abbey</td>
+      <td><span class="skip-font">~absorbed</span></td>
+    </tr>
+    <tr>
+      <td>absorbed</td>
+      <td><span class="skip-font">~baby</span></td>
+    </tr>
+    <tr>
+      <td>baby</td>
+      <td><span class="skip-font">~abbey</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>debt</td>
+      <td><span class="skip-font">~edinburgh</span></td>
+    </tr>
+    <tr>
+      <td>embrace</td>
+      <td><span class="skip-font">~embrace</span></td>
+    </tr>
+    <tr>
+      <td>bible</td>
+      <td><span class="skip-font">~bible</span></td>
+    </tr>
+    <tr>
+      <td>edinburgh</td>
+      <td><span class="skip-font">~debt</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>maybe</td>
+      <td><span class="skip-font">~obs</span></td>
+    </tr>
+    <tr>
+      <td>obs</td>
+      <td><span class="skip-font">~maybe</span></td>
+    </tr>
+    <tr>
+      <td>neighbor</td>
+      <td><span class="skip-font">~husband</span></td>
+    </tr>
+    <tr>
+      <td>husband</td>
+      <td><span class="skip-font">~neighbor</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>subject</td>
+      <td><span class="skip-font">~obvious</span></td>
+    </tr>
+    <tr>
+      <td>obvious</td>
+      <td><span class="skip-font">~subject</span></td>
+    </tr>
+    <tr>
+      <td>submit</td>
+      <td><span class="skip-font">~submit</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="c-c">C: c</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">acquired</span></td>
+      <td>acquired</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">calculated</span></td>
+      <td>calculated</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">clock</span></td>
+      <td>clock</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">electric</span></td>
+      <td>electric</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">erect</span></td>
+      <td>erect</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">excuse</span></td>
+      <td>excuse</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">francs</span></td>
+      <td>francs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lucy</span></td>
+      <td>lucy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">mercy</span></td>
+      <td>mercy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">occur</span></td>
+      <td>occur</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">omicron</span></td>
+      <td>omicron</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">scarce</span></td>
+      <td>scarce</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">science</span></td>
+      <td>science</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">scotch</span></td>
+      <td>scotch</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">specific</span></td>
+      <td>specific</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>clock</td>
+      <td><span class="skip-font">~acquired</span></td>
+    </tr>
+    <tr>
+      <td>electric</td>
+      <td><span class="skip-font">~calculated</span></td>
+    </tr>
+    <tr>
+      <td>acquired</td>
+      <td><span class="skip-font">~clock</span></td>
+    </tr>
+    <tr>
+      <td>calculated</td>
+      <td><span class="skip-font">~electric</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>erect</td>
+      <td><span class="skip-font">~lucy</span></td>
+    </tr>
+    <tr>
+      <td>francs</td>
+      <td><span class="skip-font">~francs</span></td>
+    </tr>
+    <tr>
+      <td>excuse</td>
+      <td><span class="skip-font">~erect</span></td>
+    </tr>
+    <tr>
+      <td>lucy</td>
+      <td><span class="skip-font">~excuse</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>occur</td>
+      <td><span class="skip-font">~scarce</span></td>
+    </tr>
+    <tr>
+      <td>omicron</td>
+      <td><span class="skip-font">~mercy</span></td>
+    </tr>
+    <tr>
+      <td>mercy</td>
+      <td><span class="skip-font">~omicron</span></td>
+    </tr>
+    <tr>
+      <td>scarce</td>
+      <td><span class="skip-font">~occur</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>science</td>
+      <td><span class="skip-font">~specific</span></td>
+    </tr>
+    <tr>
+      <td>scotch</td>
+      <td><span class="skip-font">~scotch</span></td>
+    </tr>
+    <tr>
+      <td>specific</td>
+      <td><span class="skip-font">~science</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="d-d">D: d</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">breadth</span></td>
+      <td>breadth</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">childhood</span></td>
+      <td>childhood</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">dreadful</span></td>
+      <td>dreadful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">edward</span></td>
+      <td>edward</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">goodness</span></td>
+      <td>goodness</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">handkerchief</span></td>
+      <td>handkerchief</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">headquarters</span></td>
+      <td>headquarters</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">hundreds</span></td>
+      <td>hundreds</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">individual</span></td>
+      <td>individual</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">middle</span></td>
+      <td>middle</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">powder</span></td>
+      <td>powder</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">study</span></td>
+      <td>study</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">today</span></td>
+      <td>today</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">wisdom</span></td>
+      <td>wisdom</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">withdrew</span></td>
+      <td>withdrew</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>dreadful</td>
+      <td><span class="skip-font">~childhood</span></td>
+    </tr>
+    <tr>
+      <td>breadth</td>
+      <td><span class="skip-font">~dreadful</span></td>
+    </tr>
+    <tr>
+      <td>childhood</td>
+      <td><span class="skip-font">~edward</span></td>
+    </tr>
+    <tr>
+      <td>edward</td>
+      <td><span class="skip-font">~breadth</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>hundreds</td>
+      <td><span class="skip-font">~headquarters</span></td>
+    </tr>
+    <tr>
+      <td>headquarters</td>
+      <td><span class="skip-font">~goodness</span></td>
+    </tr>
+    <tr>
+      <td>goodness</td>
+      <td><span class="skip-font">~handkerchief</span></td>
+    </tr>
+    <tr>
+      <td>handkerchief</td>
+      <td><span class="skip-font">~hundreds</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>middle</td>
+      <td><span class="skip-font">~powder</span></td>
+    </tr>
+    <tr>
+      <td>individual</td>
+      <td><span class="skip-font">~study</span></td>
+    </tr>
+    <tr>
+      <td>study</td>
+      <td><span class="skip-font">~individual</span></td>
+    </tr>
+    <tr>
+      <td>powder</td>
+      <td><span class="skip-font">~middle</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>today</td>
+      <td><span class="skip-font">~today</span></td>
+    </tr>
+    <tr>
+      <td>wisdom</td>
+      <td><span class="skip-font">~wisdom</span></td>
+    </tr>
+    <tr>
+      <td>withdrew</td>
+      <td><span class="skip-font">~withdrew</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="e-e">E: e</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">breeze</span></td>
+      <td>breeze</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">december</span></td>
+      <td>december</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">executed</span></td>
+      <td>executed</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">keeper</span></td>
+      <td>keeper</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">museum</span></td>
+      <td>museum</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">negroes</span></td>
+      <td>negroes</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">nevertheless</span></td>
+      <td>nevertheless</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">obeyed</span></td>
+      <td>obeyed</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">peoples</span></td>
+      <td>peoples</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">received</span></td>
+      <td>received</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">rejected</span></td>
+      <td>rejected</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">requested</span></td>
+      <td>requested</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">review</span></td>
+      <td>review</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">settlement</span></td>
+      <td>settlement</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">week</span></td>
+      <td>week</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>breeze</td>
+      <td><span class="skip-font">~december</span></td>
+    </tr>
+    <tr>
+      <td>keeper</td>
+      <td><span class="skip-font">~keeper</span></td>
+    </tr>
+    <tr>
+      <td>december</td>
+      <td><span class="skip-font">~breeze</span></td>
+    </tr>
+    <tr>
+      <td>executed</td>
+      <td><span class="skip-font">~executed</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>nevertheless</td>
+      <td><span class="skip-font">~nevertheless</span></td>
+    </tr>
+    <tr>
+      <td>obeyed</td>
+      <td><span class="skip-font">~negroes</span></td>
+    </tr>
+    <tr>
+      <td>negroes</td>
+      <td><span class="skip-font">~museum</span></td>
+    </tr>
+    <tr>
+      <td>museum</td>
+      <td><span class="skip-font">~obeyed</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>requested</td>
+      <td><span class="skip-font">~peoples</span></td>
+    </tr>
+    <tr>
+      <td>peoples</td>
+      <td><span class="skip-font">~rejected</span></td>
+    </tr>
+    <tr>
+      <td>rejected</td>
+      <td><span class="skip-font">~received</span></td>
+    </tr>
+    <tr>
+      <td>received</td>
+      <td><span class="skip-font">~requested</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>settlement</td>
+      <td><span class="skip-font">~review</span></td>
+    </tr>
+    <tr>
+      <td>review</td>
+      <td><span class="skip-font">~settlement</span></td>
+    </tr>
+    <tr>
+      <td>week</td>
+      <td><span class="skip-font">~week</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="f-f">F: f</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">alfred</span></td>
+      <td>alfred</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">comfort</span></td>
+      <td>comfort</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">defn</span></td>
+      <td>defn</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">dreadful</span></td>
+      <td>dreadful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">faithful</span></td>
+      <td>faithful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">fearful</span></td>
+      <td>fearful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">fifty</span></td>
+      <td>fifty</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">infant</span></td>
+      <td>infant</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">oxford</span></td>
+      <td>oxford</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">platform</span></td>
+      <td>platform</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">rifle</span></td>
+      <td>rifle</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">safe</span></td>
+      <td>safe</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">satisfy</span></td>
+      <td>satisfy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">soft</span></td>
+      <td>soft</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">stuff</span></td>
+      <td>stuff</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>defn</td>
+      <td><span class="skip-font">~dreadful</span></td>
+    </tr>
+    <tr>
+      <td>alfred</td>
+      <td><span class="skip-font">~alfred</span></td>
+    </tr>
+    <tr>
+      <td>comfort</td>
+      <td><span class="skip-font">~defn</span></td>
+    </tr>
+    <tr>
+      <td>dreadful</td>
+      <td><span class="skip-font">~comfort</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>faithful</td>
+      <td><span class="skip-font">~faithful</span></td>
+    </tr>
+    <tr>
+      <td>fifty</td>
+      <td><span class="skip-font">~infant</span></td>
+    </tr>
+    <tr>
+      <td>fearful</td>
+      <td><span class="skip-font">~fearful</span></td>
+    </tr>
+    <tr>
+      <td>infant</td>
+      <td><span class="skip-font">~fifty</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>rifle</td>
+      <td><span class="skip-font">~oxford</span></td>
+    </tr>
+    <tr>
+      <td>platform</td>
+      <td><span class="skip-font">~safe</span></td>
+    </tr>
+    <tr>
+      <td>safe</td>
+      <td><span class="skip-font">~rifle</span></td>
+    </tr>
+    <tr>
+      <td>oxford</td>
+      <td><span class="skip-font">~platform</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>stuff</td>
+      <td><span class="skip-font">~satisfy</span></td>
+    </tr>
+    <tr>
+      <td>soft</td>
+      <td><span class="skip-font">~soft</span></td>
+    </tr>
+    <tr>
+      <td>satisfy</td>
+      <td><span class="skip-font">~stuff</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="g-g">G: g</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">background</span></td>
+      <td>background</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">disgrace</span></td>
+      <td>disgrace</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">dogs</span></td>
+      <td>dogs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">edge</span></td>
+      <td>edge</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">eggs</span></td>
+      <td>eggs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">energy</span></td>
+      <td>energy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">forgot</span></td>
+      <td>forgot</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">kingdom</span></td>
+      <td>kingdom</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">language</span></td>
+      <td>language</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">laughing</span></td>
+      <td>laughing</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">length</span></td>
+      <td>length</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">organ</span></td>
+      <td>organ</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">sign</span></td>
+      <td>sign</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">ugly</span></td>
+      <td>ugly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">vulgar</span></td>
+      <td>vulgar</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>edge</td>
+      <td><span class="skip-font">~disgrace</span></td>
+    </tr>
+    <tr>
+      <td>dogs</td>
+      <td><span class="skip-font">~dogs</span></td>
+    </tr>
+    <tr>
+      <td>disgrace</td>
+      <td><span class="skip-font">~background</span></td>
+    </tr>
+    <tr>
+      <td>background</td>
+      <td><span class="skip-font">~edge</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>kingdom</td>
+      <td><span class="skip-font">~energy</span></td>
+    </tr>
+    <tr>
+      <td>eggs</td>
+      <td><span class="skip-font">~eggs</span></td>
+    </tr>
+    <tr>
+      <td>energy</td>
+      <td><span class="skip-font">~kingdom</span></td>
+    </tr>
+    <tr>
+      <td>forgot</td>
+      <td><span class="skip-font">~forgot</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>length</td>
+      <td><span class="skip-font">~organ</span></td>
+    </tr>
+    <tr>
+      <td>laughing</td>
+      <td><span class="skip-font">~laughing</span></td>
+    </tr>
+    <tr>
+      <td>language</td>
+      <td><span class="skip-font">~length</span></td>
+    </tr>
+    <tr>
+      <td>organ</td>
+      <td><span class="skip-font">~language</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>sign</td>
+      <td><span class="skip-font">~sign</span></td>
+    </tr>
+    <tr>
+      <td>vulgar</td>
+      <td><span class="skip-font">~ugly</span></td>
+    </tr>
+    <tr>
+      <td>ugly</td>
+      <td><span class="skip-font">~vulgar</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="h-h">H: h</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">anyhow</span></td>
+      <td>anyhow</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">beheld</span></td>
+      <td>beheld</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">childhood</span></td>
+      <td>childhood</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">exhibit</span></td>
+      <td>exhibit</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">faithful</span></td>
+      <td>faithful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">john</span></td>
+      <td>john</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">neighborhood</span></td>
+      <td>neighborhood</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">paths</span></td>
+      <td>paths</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">phrase</span></td>
+      <td>phrase</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">shut</span></td>
+      <td>shut</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">thought</span></td>
+      <td>thought</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">thy</span></td>
+      <td>thy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">whither</span></td>
+      <td>whither</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">why</span></td>
+      <td>why</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">withdrew</span></td>
+      <td>withdrew</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>beheld</td>
+      <td><span class="skip-font">~exhibit</span></td>
+    </tr>
+    <tr>
+      <td>exhibit</td>
+      <td><span class="skip-font">~childhood</span></td>
+    </tr>
+    <tr>
+      <td>anyhow</td>
+      <td><span class="skip-font">~anyhow</span></td>
+    </tr>
+    <tr>
+      <td>childhood</td>
+      <td><span class="skip-font">~beheld</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>john</td>
+      <td><span class="skip-font">~paths</span></td>
+    </tr>
+    <tr>
+      <td>faithful</td>
+      <td><span class="skip-font">~faithful</span></td>
+    </tr>
+    <tr>
+      <td>neighborhood</td>
+      <td><span class="skip-font">~john</span></td>
+    </tr>
+    <tr>
+      <td>paths</td>
+      <td><span class="skip-font">~neighborhood</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>thy</td>
+      <td><span class="skip-font">~thought</span></td>
+    </tr>
+    <tr>
+      <td>shut</td>
+      <td><span class="skip-font">~shut</span></td>
+    </tr>
+    <tr>
+      <td>phrase</td>
+      <td><span class="skip-font">~thy</span></td>
+    </tr>
+    <tr>
+      <td>thought</td>
+      <td><span class="skip-font">~phrase</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>whither</td>
+      <td><span class="skip-font">~why</span></td>
+    </tr>
+    <tr>
+      <td>why</td>
+      <td><span class="skip-font">~withdrew</span></td>
+    </tr>
+    <tr>
+      <td>withdrew</td>
+      <td><span class="skip-font">~whither</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="i-i">I: i</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">civilized</span></td>
+      <td>civilized</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">criticism</span></td>
+      <td>criticism</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">gazing</span></td>
+      <td>gazing</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">genius</span></td>
+      <td>genius</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">jim</span></td>
+      <td>jim</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">liquid</span></td>
+      <td>liquid</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lying</span></td>
+      <td>lying</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">philip</span></td>
+      <td>philip</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">pig</span></td>
+      <td>pig</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">similar</span></td>
+      <td>similar</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">six</span></td>
+      <td>six</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">virginia</span></td>
+      <td>virginia</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">visiting</span></td>
+      <td>visiting</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">wishing</span></td>
+      <td>wishing</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">xii</span></td>
+      <td>xii</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>genius</td>
+      <td><span class="skip-font">~gazing</span></td>
+    </tr>
+    <tr>
+      <td>gazing</td>
+      <td><span class="skip-font">~genius</span></td>
+    </tr>
+    <tr>
+      <td>criticism</td>
+      <td><span class="skip-font">~civilized</span></td>
+    </tr>
+    <tr>
+      <td>civilized</td>
+      <td><span class="skip-font">~criticism</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>jim</td>
+      <td><span class="skip-font">~liquid</span></td>
+    </tr>
+    <tr>
+      <td>lying</td>
+      <td><span class="skip-font">~philip</span></td>
+    </tr>
+    <tr>
+      <td>philip</td>
+      <td><span class="skip-font">~lying</span></td>
+    </tr>
+    <tr>
+      <td>liquid</td>
+      <td><span class="skip-font">~jim</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>similar</td>
+      <td><span class="skip-font">~virginia</span></td>
+    </tr>
+    <tr>
+      <td>virginia</td>
+      <td><span class="skip-font">~six</span></td>
+    </tr>
+    <tr>
+      <td>six</td>
+      <td><span class="skip-font">~pig</span></td>
+    </tr>
+    <tr>
+      <td>pig</td>
+      <td><span class="skip-font">~similar</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>wishing</td>
+      <td><span class="skip-font">~visiting</span></td>
+    </tr>
+    <tr>
+      <td>visiting</td>
+      <td><span class="skip-font">~xii</span></td>
+    </tr>
+    <tr>
+      <td>xii</td>
+      <td><span class="skip-font">~wishing</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="j-j">J: j</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">adjoining</span></td>
+      <td>adjoining</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">enjoy</span></td>
+      <td>enjoy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">jan</span></td>
+      <td>jan</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">jew</span></td>
+      <td>jew</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">jim</span></td>
+      <td>jim</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">joy</span></td>
+      <td>joy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">just</span></td>
+      <td>just</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">major</span></td>
+      <td>major</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">object</span></td>
+      <td>object</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>jan</td>
+      <td><span class="skip-font">~adjoining</span></td>
+    </tr>
+    <tr>
+      <td>jew</td>
+      <td><span class="skip-font">~jew</span></td>
+    </tr>
+    <tr>
+      <td>enjoy</td>
+      <td><span class="skip-font">~enjoy</span></td>
+    </tr>
+    <tr>
+      <td>adjoining</td>
+      <td><span class="skip-font">~jan</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>jim</td>
+      <td><span class="skip-font">~joy</span></td>
+    </tr>
+    <tr>
+      <td>major</td>
+      <td><span class="skip-font">~just</span></td>
+    </tr>
+    <tr>
+      <td>just</td>
+      <td><span class="skip-font">~major</span></td>
+    </tr>
+    <tr>
+      <td>joy</td>
+      <td><span class="skip-font">~jim</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>object</td>
+      <td><span class="skip-font">~object</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="k-k">K: k</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">awkward</span></td>
+      <td>awkward</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">breakfast</span></td>
+      <td>breakfast</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">duke</span></td>
+      <td>duke</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">folks</span></td>
+      <td>folks</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">frankly</span></td>
+      <td>frankly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">handkerchief</span></td>
+      <td>handkerchief</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">joke</span></td>
+      <td>joke</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">make</span></td>
+      <td>make</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">making</span></td>
+      <td>making</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">reckon</span></td>
+      <td>reckon</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">skin</span></td>
+      <td>skin</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">sky</span></td>
+      <td>sky</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">unknown</span></td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">weeks</span></td>
+      <td>weeks</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">workmen</span></td>
+      <td>workmen</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>awkward</td>
+      <td><span class="skip-font">~duke</span></td>
+    </tr>
+    <tr>
+      <td>folks</td>
+      <td><span class="skip-font">~breakfast</span></td>
+    </tr>
+    <tr>
+      <td>duke</td>
+      <td><span class="skip-font">~awkward</span></td>
+    </tr>
+    <tr>
+      <td>breakfast</td>
+      <td><span class="skip-font">~folks</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>joke</td>
+      <td><span class="skip-font">~joke</span></td>
+    </tr>
+    <tr>
+      <td>make</td>
+      <td><span class="skip-font">~make</span></td>
+    </tr>
+    <tr>
+      <td>frankly</td>
+      <td><span class="skip-font">~frankly</span></td>
+    </tr>
+    <tr>
+      <td>handkerchief</td>
+      <td><span class="skip-font">~handkerchief</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>reckon</td>
+      <td><span class="skip-font">~making</span></td>
+    </tr>
+    <tr>
+      <td>sky</td>
+      <td><span class="skip-font">~skin</span></td>
+    </tr>
+    <tr>
+      <td>skin</td>
+      <td><span class="skip-font">~sky</span></td>
+    </tr>
+    <tr>
+      <td>making</td>
+      <td><span class="skip-font">~reckon</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>weeks</td>
+      <td><span class="skip-font">~workmen</span></td>
+    </tr>
+    <tr>
+      <td>workmen</td>
+      <td><span class="skip-font">~weeks</span></td>
+    </tr>
+    <tr>
+      <td>unknown</td>
+      <td><span class="skip-font">~unknown</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="l-l">L: l</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">albert</span></td>
+      <td>albert</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">calmly</span></td>
+      <td>calmly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">fld</span></td>
+      <td>fld</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">gladly</span></td>
+      <td>gladly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">helpless</span></td>
+      <td>helpless</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">illness</span></td>
+      <td>illness</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">liable</span></td>
+      <td>liable</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">old</span></td>
+      <td>old</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">plainly</span></td>
+      <td>plainly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">puzzled</span></td>
+      <td>puzzled</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">solemnly</span></td>
+      <td>solemnly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">style</span></td>
+      <td>style</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">valuable</span></td>
+      <td>valuable</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">vulgar</span></td>
+      <td>vulgar</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">wolf</span></td>
+      <td>wolf</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>albert</td>
+      <td><span class="skip-font">~albert</span></td>
+    </tr>
+    <tr>
+      <td>calmly</td>
+      <td><span class="skip-font">~fld</span></td>
+    </tr>
+    <tr>
+      <td>gladly</td>
+      <td><span class="skip-font">~calmly</span></td>
+    </tr>
+    <tr>
+      <td>fld</td>
+      <td><span class="skip-font">~gladly</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>helpless</td>
+      <td><span class="skip-font">~helpless</span></td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td><span class="skip-font">~illness</span></td>
+    </tr>
+    <tr>
+      <td>liable</td>
+      <td><span class="skip-font">~old</span></td>
+    </tr>
+    <tr>
+      <td>illness</td>
+      <td><span class="skip-font">~liable</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>style</td>
+      <td><span class="skip-font">~plainly</span></td>
+    </tr>
+    <tr>
+      <td>solemnly</td>
+      <td><span class="skip-font">~style</span></td>
+    </tr>
+    <tr>
+      <td>puzzled</td>
+      <td><span class="skip-font">~solemnly</span></td>
+    </tr>
+    <tr>
+      <td>plainly</td>
+      <td><span class="skip-font">~puzzled</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>wolf</td>
+      <td><span class="skip-font">~valuable</span></td>
+    </tr>
+    <tr>
+      <td>vulgar</td>
+      <td><span class="skip-font">~vulgar</span></td>
+    </tr>
+    <tr>
+      <td>valuable</td>
+      <td><span class="skip-font">~wolf</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="m-m">M: m</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">admit</span></td>
+      <td>admit</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">calmly</span></td>
+      <td>calmly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">development</span></td>
+      <td>development</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">mamma</span></td>
+      <td>mamma</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">member</span></td>
+      <td>member</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">memory</span></td>
+      <td>memory</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">moment</span></td>
+      <td>moment</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">mrs</span></td>
+      <td>mrs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">smile</span></td>
+      <td>smile</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">submit</span></td>
+      <td>submit</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">symptoms</span></td>
+      <td>symptoms</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">time</span></td>
+      <td>time</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">tommy</span></td>
+      <td>tommy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">utmost</span></td>
+      <td>utmost</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">warmth</span></td>
+      <td>warmth</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>development</td>
+      <td><span class="skip-font">~mamma</span></td>
+    </tr>
+    <tr>
+      <td>calmly</td>
+      <td><span class="skip-font">~admit</span></td>
+    </tr>
+    <tr>
+      <td>admit</td>
+      <td><span class="skip-font">~development</span></td>
+    </tr>
+    <tr>
+      <td>mamma</td>
+      <td><span class="skip-font">~calmly</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>moment</td>
+      <td><span class="skip-font">~mrs</span></td>
+    </tr>
+    <tr>
+      <td>mrs</td>
+      <td><span class="skip-font">~memory</span></td>
+    </tr>
+    <tr>
+      <td>memory</td>
+      <td><span class="skip-font">~member</span></td>
+    </tr>
+    <tr>
+      <td>member</td>
+      <td><span class="skip-font">~moment</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>time</td>
+      <td><span class="skip-font">~symptoms</span></td>
+    </tr>
+    <tr>
+      <td>symptoms</td>
+      <td><span class="skip-font">~time</span></td>
+    </tr>
+    <tr>
+      <td>submit</td>
+      <td><span class="skip-font">~smile</span></td>
+    </tr>
+    <tr>
+      <td>smile</td>
+      <td><span class="skip-font">~submit</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>utmost</td>
+      <td><span class="skip-font">~tommy</span></td>
+    </tr>
+    <tr>
+      <td>tommy</td>
+      <td><span class="skip-font">~utmost</span></td>
+    </tr>
+    <tr>
+      <td>warmth</td>
+      <td><span class="skip-font">~warmth</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="n-n">N: n</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">anna</span></td>
+      <td>anna</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">bronze</span></td>
+      <td>bronze</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">concerning</span></td>
+      <td>concerning</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">edinburgh</span></td>
+      <td>edinburgh</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">envy</span></td>
+      <td>envy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">henry</span></td>
+      <td>henry</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">ignorant</span></td>
+      <td>ignorant</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">infant</span></td>
+      <td>infant</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">intend</span></td>
+      <td>intend</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">kindness</span></td>
+      <td>kindness</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lincoln</span></td>
+      <td>lincoln</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">only</span></td>
+      <td>only</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">penny</span></td>
+      <td>penny</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">unknown</span></td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">witness</span></td>
+      <td>witness</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>edinburgh</td>
+      <td><span class="skip-font">~concerning</span></td>
+    </tr>
+    <tr>
+      <td>bronze</td>
+      <td><span class="skip-font">~anna</span></td>
+    </tr>
+    <tr>
+      <td>anna</td>
+      <td><span class="skip-font">~bronze</span></td>
+    </tr>
+    <tr>
+      <td>concerning</td>
+      <td><span class="skip-font">~edinburgh</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>ignorant</td>
+      <td><span class="skip-font">~envy</span></td>
+    </tr>
+    <tr>
+      <td>henry</td>
+      <td><span class="skip-font">~henry</span></td>
+    </tr>
+    <tr>
+      <td>infant</td>
+      <td><span class="skip-font">~ignorant</span></td>
+    </tr>
+    <tr>
+      <td>envy</td>
+      <td><span class="skip-font">~infant</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>lincoln</td>
+      <td><span class="skip-font">~only</span></td>
+    </tr>
+    <tr>
+      <td>only</td>
+      <td><span class="skip-font">~kindness</span></td>
+    </tr>
+    <tr>
+      <td>intend</td>
+      <td><span class="skip-font">~intend</span></td>
+    </tr>
+    <tr>
+      <td>kindness</td>
+      <td><span class="skip-font">~lincoln</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>penny</td>
+      <td><span class="skip-font">~unknown</span></td>
+    </tr>
+    <tr>
+      <td>unknown</td>
+      <td><span class="skip-font">~witness</span></td>
+    </tr>
+    <tr>
+      <td>witness</td>
+      <td><span class="skip-font">~penny</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="o-o">O: o</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">coat</span></td>
+      <td>coat</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">composition</span></td>
+      <td>composition</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">devotion</span></td>
+      <td>devotion</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">doctor</span></td>
+      <td>doctor</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">extraordinary</span></td>
+      <td>extraordinary</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">forgot</span></td>
+      <td>forgot</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">goin</span></td>
+      <td>goin</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">honour</span></td>
+      <td>honour</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">neighbourhood</span></td>
+      <td>neighbourhood</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">nobody</span></td>
+      <td>nobody</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">potatoes</span></td>
+      <td>potatoes</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">roof</span></td>
+      <td>roof</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">solomon</span></td>
+      <td>solomon</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">someone</span></td>
+      <td>someone</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">wool</span></td>
+      <td>wool</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>devotion</td>
+      <td><span class="skip-font">~coat</span></td>
+    </tr>
+    <tr>
+      <td>doctor</td>
+      <td><span class="skip-font">~doctor</span></td>
+    </tr>
+    <tr>
+      <td>coat</td>
+      <td><span class="skip-font">~devotion</span></td>
+    </tr>
+    <tr>
+      <td>composition</td>
+      <td><span class="skip-font">~composition</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>goin</td>
+      <td><span class="skip-font">~honour</span></td>
+    </tr>
+    <tr>
+      <td>extraordinary</td>
+      <td><span class="skip-font">~extraordinary</span></td>
+    </tr>
+    <tr>
+      <td>honour</td>
+      <td><span class="skip-font">~forgot</span></td>
+    </tr>
+    <tr>
+      <td>forgot</td>
+      <td><span class="skip-font">~goin</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>neighbourhood</td>
+      <td><span class="skip-font">~neighbourhood</span></td>
+    </tr>
+    <tr>
+      <td>potatoes</td>
+      <td><span class="skip-font">~nobody</span></td>
+    </tr>
+    <tr>
+      <td>roof</td>
+      <td><span class="skip-font">~roof</span></td>
+    </tr>
+    <tr>
+      <td>nobody</td>
+      <td><span class="skip-font">~potatoes</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>someone</td>
+      <td><span class="skip-font">~solomon</span></td>
+    </tr>
+    <tr>
+      <td>solomon</td>
+      <td><span class="skip-font">~someone</span></td>
+    </tr>
+    <tr>
+      <td>wool</td>
+      <td><span class="skip-font">~wool</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="p-p">P: p</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">apply</span></td>
+      <td>apply</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">egypt</span></td>
+      <td>egypt</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">happy</span></td>
+      <td>happy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">kept</span></td>
+      <td>kept</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lips</span></td>
+      <td>lips</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">pipe</span></td>
+      <td>pipe</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">pope</span></td>
+      <td>pope</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">prepare</span></td>
+      <td>prepare</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">prophet</span></td>
+      <td>prophet</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">pupil</span></td>
+      <td>pupil</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">purple</span></td>
+      <td>purple</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">spy</span></td>
+      <td>spy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">tops</span></td>
+      <td>tops</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>apply</td>
+      <td><span class="skip-font">~apply</span></td>
+    </tr>
+    <tr>
+      <td>egypt</td>
+      <td><span class="skip-font">~egypt</span></td>
+    </tr>
+    <tr>
+      <td>happy</td>
+      <td><span class="skip-font">~kept</span></td>
+    </tr>
+    <tr>
+      <td>kept</td>
+      <td><span class="skip-font">~happy</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>pope</td>
+      <td><span class="skip-font">~lips</span></td>
+    </tr>
+    <tr>
+      <td>lips</td>
+      <td><span class="skip-font">~pope</span></td>
+    </tr>
+    <tr>
+      <td>prepare</td>
+      <td><span class="skip-font">~pipe</span></td>
+    </tr>
+    <tr>
+      <td>pipe</td>
+      <td><span class="skip-font">~prepare</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>prophet</td>
+      <td><span class="skip-font">~prophet</span></td>
+    </tr>
+    <tr>
+      <td>spy</td>
+      <td><span class="skip-font">~pupil</span></td>
+    </tr>
+    <tr>
+      <td>purple</td>
+      <td><span class="skip-font">~spy</span></td>
+    </tr>
+    <tr>
+      <td>pupil</td>
+      <td><span class="skip-font">~purple</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>tops</td>
+      <td><span class="skip-font">~tops</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="q-q">Q: q</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">acquired</span></td>
+      <td>acquired</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">blockquote</span></td>
+      <td>blockquote</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">eloquence</span></td>
+      <td>eloquence</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">equal</span></td>
+      <td>equal</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">esq</span></td>
+      <td>esq</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">exquisite</span></td>
+      <td>exquisite</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">headquarters</span></td>
+      <td>headquarters</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">inquiry</span></td>
+      <td>inquiry</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">liquid</span></td>
+      <td>liquid</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">marquis</span></td>
+      <td>marquis</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">que</span></td>
+      <td>que</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>equal</td>
+      <td><span class="skip-font">~acquired</span></td>
+    </tr>
+    <tr>
+      <td>eloquence</td>
+      <td><span class="skip-font">~eloquence</span></td>
+    </tr>
+    <tr>
+      <td>blockquote</td>
+      <td><span class="skip-font">~equal</span></td>
+    </tr>
+    <tr>
+      <td>acquired</td>
+      <td><span class="skip-font">~blockquote</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>exquisite</td>
+      <td><span class="skip-font">~inquiry</span></td>
+    </tr>
+    <tr>
+      <td>headquarters</td>
+      <td><span class="skip-font">~esq</span></td>
+    </tr>
+    <tr>
+      <td>inquiry</td>
+      <td><span class="skip-font">~headquarters</span></td>
+    </tr>
+    <tr>
+      <td>esq</td>
+      <td><span class="skip-font">~exquisite</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>liquid</td>
+      <td><span class="skip-font">~que</span></td>
+    </tr>
+    <tr>
+      <td>que</td>
+      <td><span class="skip-font">~marquis</span></td>
+    </tr>
+    <tr>
+      <td>marquis</td>
+      <td><span class="skip-font">~liquid</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="r-r">R: r</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">brethren</span></td>
+      <td>brethren</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">extraordinary</span></td>
+      <td>extraordinary</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">israel</span></td>
+      <td>israel</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">mrs</span></td>
+      <td>mrs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">perform</span></td>
+      <td>perform</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">perhaps</span></td>
+      <td>perhaps</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">preserve</span></td>
+      <td>preserve</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">progress</span></td>
+      <td>progress</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">properly</span></td>
+      <td>properly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">railroad</span></td>
+      <td>railroad</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">return</span></td>
+      <td>return</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">scripture</span></td>
+      <td>scripture</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">virgin</span></td>
+      <td>virgin</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">warriors</span></td>
+      <td>warriors</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">workers</span></td>
+      <td>workers</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>israel</td>
+      <td><span class="skip-font">~israel</span></td>
+    </tr>
+    <tr>
+      <td>brethren</td>
+      <td><span class="skip-font">~brethren</span></td>
+    </tr>
+    <tr>
+      <td>mrs</td>
+      <td><span class="skip-font">~mrs</span></td>
+    </tr>
+    <tr>
+      <td>extraordinary</td>
+      <td><span class="skip-font">~extraordinary</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>perhaps</td>
+      <td><span class="skip-font">~perhaps</span></td>
+    </tr>
+    <tr>
+      <td>progress</td>
+      <td><span class="skip-font">~progress</span></td>
+    </tr>
+    <tr>
+      <td>perform</td>
+      <td><span class="skip-font">~perform</span></td>
+    </tr>
+    <tr>
+      <td>preserve</td>
+      <td><span class="skip-font">~preserve</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>scripture</td>
+      <td><span class="skip-font">~properly</span></td>
+    </tr>
+    <tr>
+      <td>properly</td>
+      <td><span class="skip-font">~railroad</span></td>
+    </tr>
+    <tr>
+      <td>railroad</td>
+      <td><span class="skip-font">~scripture</span></td>
+    </tr>
+    <tr>
+      <td>return</td>
+      <td><span class="skip-font">~return</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>warriors</td>
+      <td><span class="skip-font">~workers</span></td>
+    </tr>
+    <tr>
+      <td>virgin</td>
+      <td><span class="skip-font">~virgin</span></td>
+    </tr>
+    <tr>
+      <td>workers</td>
+      <td><span class="skip-font">~warriors</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="s-s">S: s</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">asks</span></td>
+      <td>asks</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">bishops</span></td>
+      <td>bishops</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">chiefs</span></td>
+      <td>chiefs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">consciousness</span></td>
+      <td>consciousness</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">disgust</span></td>
+      <td>disgust</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">disposition</span></td>
+      <td>disposition</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">husband</span></td>
+      <td>husband</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">islands</span></td>
+      <td>islands</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">massachusetts</span></td>
+      <td>massachusetts</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">paths</span></td>
+      <td>paths</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">songs</span></td>
+      <td>songs</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">substance</span></td>
+      <td>substance</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">successful</span></td>
+      <td>successful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">system</span></td>
+      <td>system</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">wisdom</span></td>
+      <td>wisdom</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>asks</td>
+      <td><span class="skip-font">~consciousness</span></td>
+    </tr>
+    <tr>
+      <td>chiefs</td>
+      <td><span class="skip-font">~asks</span></td>
+    </tr>
+    <tr>
+      <td>bishops</td>
+      <td><span class="skip-font">~bishops</span></td>
+    </tr>
+    <tr>
+      <td>consciousness</td>
+      <td><span class="skip-font">~chiefs</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>disposition</td>
+      <td><span class="skip-font">~islands</span></td>
+    </tr>
+    <tr>
+      <td>islands</td>
+      <td><span class="skip-font">~disposition</span></td>
+    </tr>
+    <tr>
+      <td>disgust</td>
+      <td><span class="skip-font">~disgust</span></td>
+    </tr>
+    <tr>
+      <td>husband</td>
+      <td><span class="skip-font">~husband</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>substance</td>
+      <td><span class="skip-font">~substance</span></td>
+    </tr>
+    <tr>
+      <td>paths</td>
+      <td><span class="skip-font">~songs</span></td>
+    </tr>
+    <tr>
+      <td>songs</td>
+      <td><span class="skip-font">~paths</span></td>
+    </tr>
+    <tr>
+      <td>massachusetts</td>
+      <td><span class="skip-font">~massachusetts</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>system</td>
+      <td><span class="skip-font">~wisdom</span></td>
+    </tr>
+    <tr>
+      <td>wisdom</td>
+      <td><span class="skip-font">~successful</span></td>
+    </tr>
+    <tr>
+      <td>successful</td>
+      <td><span class="skip-font">~system</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="t-t">T: t</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">activity</span></td>
+      <td>activity</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">altogether</span></td>
+      <td>altogether</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">attempts</span></td>
+      <td>attempts</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">breadth</span></td>
+      <td>breadth</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">doubtful</span></td>
+      <td>doubtful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">extra</span></td>
+      <td>extra</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">fifty</span></td>
+      <td>fifty</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">fortnight</span></td>
+      <td>fortnight</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">growth</span></td>
+      <td>growth</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">startled</span></td>
+      <td>startled</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">strength</span></td>
+      <td>strength</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">stretch</span></td>
+      <td>stretch</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">twenty</span></td>
+      <td>twenty</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">utmost</span></td>
+      <td>utmost</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">warmth</span></td>
+      <td>warmth</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>attempts</td>
+      <td><span class="skip-font">~activity</span></td>
+    </tr>
+    <tr>
+      <td>altogether</td>
+      <td><span class="skip-font">~attempts</span></td>
+    </tr>
+    <tr>
+      <td>breadth</td>
+      <td><span class="skip-font">~altogether</span></td>
+    </tr>
+    <tr>
+      <td>activity</td>
+      <td><span class="skip-font">~breadth</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>doubtful</td>
+      <td><span class="skip-font">~fifty</span></td>
+    </tr>
+    <tr>
+      <td>fifty</td>
+      <td><span class="skip-font">~extra</span></td>
+    </tr>
+    <tr>
+      <td>fortnight</td>
+      <td><span class="skip-font">~fortnight</span></td>
+    </tr>
+    <tr>
+      <td>extra</td>
+      <td><span class="skip-font">~doubtful</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>growth</td>
+      <td><span class="skip-font">~stretch</span></td>
+    </tr>
+    <tr>
+      <td>stretch</td>
+      <td><span class="skip-font">~startled</span></td>
+    </tr>
+    <tr>
+      <td>strength</td>
+      <td><span class="skip-font">~growth</span></td>
+    </tr>
+    <tr>
+      <td>startled</td>
+      <td><span class="skip-font">~strength</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>twenty</td>
+      <td><span class="skip-font">~warmth</span></td>
+    </tr>
+    <tr>
+      <td>warmth</td>
+      <td><span class="skip-font">~twenty</span></td>
+    </tr>
+    <tr>
+      <td>utmost</td>
+      <td><span class="skip-font">~utmost</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="u-u">U: u</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">buffalo</span></td>
+      <td>buffalo</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">buy</span></td>
+      <td>buy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">continuous</span></td>
+      <td>continuous</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">cup</span></td>
+      <td>cup</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">doubtful</span></td>
+      <td>doubtful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">hudson</span></td>
+      <td>hudson</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">induce</span></td>
+      <td>induce</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">luke</span></td>
+      <td>luke</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">medium</span></td>
+      <td>medium</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">museum</span></td>
+      <td>museum</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">mutual</span></td>
+      <td>mutual</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">portuguese</span></td>
+      <td>portuguese</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">pursuit</span></td>
+      <td>pursuit</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">structure</span></td>
+      <td>structure</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">unjust</span></td>
+      <td>unjust</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>buffalo</td>
+      <td><span class="skip-font">~buffalo</span></td>
+    </tr>
+    <tr>
+      <td>continuous</td>
+      <td><span class="skip-font">~cup</span></td>
+    </tr>
+    <tr>
+      <td>cup</td>
+      <td><span class="skip-font">~continuous</span></td>
+    </tr>
+    <tr>
+      <td>buy</td>
+      <td><span class="skip-font">~buy</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>doubtful</td>
+      <td><span class="skip-font">~hudson</span></td>
+    </tr>
+    <tr>
+      <td>induce</td>
+      <td><span class="skip-font">~induce</span></td>
+    </tr>
+    <tr>
+      <td>hudson</td>
+      <td><span class="skip-font">~luke</span></td>
+    </tr>
+    <tr>
+      <td>luke</td>
+      <td><span class="skip-font">~doubtful</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>museum</td>
+      <td><span class="skip-font">~portuguese</span></td>
+    </tr>
+    <tr>
+      <td>mutual</td>
+      <td><span class="skip-font">~museum</span></td>
+    </tr>
+    <tr>
+      <td>medium</td>
+      <td><span class="skip-font">~medium</span></td>
+    </tr>
+    <tr>
+      <td>portuguese</td>
+      <td><span class="skip-font">~mutual</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>unjust</td>
+      <td><span class="skip-font">~structure</span></td>
+    </tr>
+    <tr>
+      <td>pursuit</td>
+      <td><span class="skip-font">~unjust</span></td>
+    </tr>
+    <tr>
+      <td>structure</td>
+      <td><span class="skip-font">~pursuit</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="v-v">V: v</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">advice</span></td>
+      <td>advice</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">envy</span></td>
+      <td>envy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">eve</span></td>
+      <td>eve</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">navy</span></td>
+      <td>navy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">obvious</span></td>
+      <td>obvious</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">over</span></td>
+      <td>over</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">serve</span></td>
+      <td>serve</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">silver</span></td>
+      <td>silver</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">van</span></td>
+      <td>van</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">vii</span></td>
+      <td>vii</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">vol</span></td>
+      <td>vol</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">vulgar</span></td>
+      <td>vulgar</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">xiv</span></td>
+      <td>xiv</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">xvi</span></td>
+      <td>xvi</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>navy</td>
+      <td><span class="skip-font">~eve</span></td>
+    </tr>
+    <tr>
+      <td>envy</td>
+      <td><span class="skip-font">~advice</span></td>
+    </tr>
+    <tr>
+      <td>eve</td>
+      <td><span class="skip-font">~envy</span></td>
+    </tr>
+    <tr>
+      <td>advice</td>
+      <td><span class="skip-font">~navy</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>silver</td>
+      <td><span class="skip-font">~obvious</span></td>
+    </tr>
+    <tr>
+      <td>serve</td>
+      <td><span class="skip-font">~serve</span></td>
+    </tr>
+    <tr>
+      <td>obvious</td>
+      <td><span class="skip-font">~over</span></td>
+    </tr>
+    <tr>
+      <td>over</td>
+      <td><span class="skip-font">~silver</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>vii</td>
+      <td><span class="skip-font">~vol</span></td>
+    </tr>
+    <tr>
+      <td>vol</td>
+      <td><span class="skip-font">~vii</span></td>
+    </tr>
+    <tr>
+      <td>vulgar</td>
+      <td><span class="skip-font">~vulgar</span></td>
+    </tr>
+    <tr>
+      <td>van</td>
+      <td><span class="skip-font">~van</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>xiv</td>
+      <td><span class="skip-font">~xvi</span></td>
+    </tr>
+    <tr>
+      <td>xvi</td>
+      <td><span class="skip-font">~xiv</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="w-w">W: w</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">awful</span></td>
+      <td>awful</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">awkward</span></td>
+      <td>awkward</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">crowd</span></td>
+      <td>crowd</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">dwell</span></td>
+      <td>dwell</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">forward</span></td>
+      <td>forward</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">growth</span></td>
+      <td>growth</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lawyer</span></td>
+      <td>lawyer</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">meanwhile</span></td>
+      <td>meanwhile</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">newly</span></td>
+      <td>newly</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">own</span></td>
+      <td>own</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">swung</span></td>
+      <td>swung</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">two</span></td>
+      <td>two</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">upward</span></td>
+      <td>upward</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">windows</span></td>
+      <td>windows</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">wrote</span></td>
+      <td>wrote</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>awkward</td>
+      <td><span class="skip-font">~crowd</span></td>
+    </tr>
+    <tr>
+      <td>crowd</td>
+      <td><span class="skip-font">~dwell</span></td>
+    </tr>
+    <tr>
+      <td>awful</td>
+      <td><span class="skip-font">~awful</span></td>
+    </tr>
+    <tr>
+      <td>dwell</td>
+      <td><span class="skip-font">~awkward</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>growth</td>
+      <td><span class="skip-font">~forward</span></td>
+    </tr>
+    <tr>
+      <td>meanwhile</td>
+      <td><span class="skip-font">~meanwhile</span></td>
+    </tr>
+    <tr>
+      <td>forward</td>
+      <td><span class="skip-font">~growth</span></td>
+    </tr>
+    <tr>
+      <td>lawyer</td>
+      <td><span class="skip-font">~lawyer</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>swung</td>
+      <td><span class="skip-font">~two</span></td>
+    </tr>
+    <tr>
+      <td>newly</td>
+      <td><span class="skip-font">~own</span></td>
+    </tr>
+    <tr>
+      <td>own</td>
+      <td><span class="skip-font">~newly</span></td>
+    </tr>
+    <tr>
+      <td>two</td>
+      <td><span class="skip-font">~swung</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>wrote</td>
+      <td><span class="skip-font">~upward</span></td>
+    </tr>
+    <tr>
+      <td>upward</td>
+      <td><span class="skip-font">~wrote</span></td>
+    </tr>
+    <tr>
+      <td>windows</td>
+      <td><span class="skip-font">~windows</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="x-x">X: x</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">anxious</span></td>
+      <td>anxious</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">exact</span></td>
+      <td>exact</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">except</span></td>
+      <td>except</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">exhibit</span></td>
+      <td>exhibit</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">exquisite</span></td>
+      <td>exquisite</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">fixed</span></td>
+      <td>fixed</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">luxury</span></td>
+      <td>luxury</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">next</span></td>
+      <td>next</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">oxford</span></td>
+      <td>oxford</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">saxon</span></td>
+      <td>saxon</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">six</span></td>
+      <td>six</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">tax</span></td>
+      <td>tax</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">xii</span></td>
+      <td>xii</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">xpage</span></td>
+      <td>xpage</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">xvi</span></td>
+      <td>xvi</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>except</td>
+      <td><span class="skip-font">~except</span></td>
+    </tr>
+    <tr>
+      <td>exact</td>
+      <td><span class="skip-font">~anxious</span></td>
+    </tr>
+    <tr>
+      <td>exhibit</td>
+      <td><span class="skip-font">~exact</span></td>
+    </tr>
+    <tr>
+      <td>anxious</td>
+      <td><span class="skip-font">~exhibit</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>luxury</td>
+      <td><span class="skip-font">~fixed</span></td>
+    </tr>
+    <tr>
+      <td>next</td>
+      <td><span class="skip-font">~luxury</span></td>
+    </tr>
+    <tr>
+      <td>fixed</td>
+      <td><span class="skip-font">~next</span></td>
+    </tr>
+    <tr>
+      <td>exquisite</td>
+      <td><span class="skip-font">~exquisite</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>saxon</td>
+      <td><span class="skip-font">~oxford</span></td>
+    </tr>
+    <tr>
+      <td>six</td>
+      <td><span class="skip-font">~six</span></td>
+    </tr>
+    <tr>
+      <td>oxford</td>
+      <td><span class="skip-font">~saxon</span></td>
+    </tr>
+    <tr>
+      <td>tax</td>
+      <td><span class="skip-font">~tax</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>xvi</td>
+      <td><span class="skip-font">~xvi</span></td>
+    </tr>
+    <tr>
+      <td>xpage</td>
+      <td><span class="skip-font">~xii</span></td>
+    </tr>
+    <tr>
+      <td>xii</td>
+      <td><span class="skip-font">~xpage</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="y-y">Y: y</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">anybody</span></td>
+      <td>anybody</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">byron</span></td>
+      <td>byron</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">egypt</span></td>
+      <td>egypt</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lawyer</span></td>
+      <td>lawyer</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lucy</span></td>
+      <td>lucy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">lying</span></td>
+      <td>lying</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">mayor</span></td>
+      <td>mayor</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">mystery</span></td>
+      <td>mystery</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">navy</span></td>
+      <td>navy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">royal</span></td>
+      <td>royal</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">satisfy</span></td>
+      <td>satisfy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">sky</span></td>
+      <td>sky</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">spy</span></td>
+      <td>spy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">style</span></td>
+      <td>style</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">sympathy</span></td>
+      <td>sympathy</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>egypt</td>
+      <td><span class="skip-font">~egypt</span></td>
+    </tr>
+    <tr>
+      <td>anybody</td>
+      <td><span class="skip-font">~lawyer</span></td>
+    </tr>
+    <tr>
+      <td>lawyer</td>
+      <td><span class="skip-font">~anybody</span></td>
+    </tr>
+    <tr>
+      <td>byron</td>
+      <td><span class="skip-font">~byron</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>lying</td>
+      <td><span class="skip-font">~mystery</span></td>
+    </tr>
+    <tr>
+      <td>mayor</td>
+      <td><span class="skip-font">~lucy</span></td>
+    </tr>
+    <tr>
+      <td>mystery</td>
+      <td><span class="skip-font">~mayor</span></td>
+    </tr>
+    <tr>
+      <td>lucy</td>
+      <td><span class="skip-font">~lying</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>royal</td>
+      <td><span class="skip-font">~navy</span></td>
+    </tr>
+    <tr>
+      <td>sky</td>
+      <td><span class="skip-font">~satisfy</span></td>
+    </tr>
+    <tr>
+      <td>navy</td>
+      <td><span class="skip-font">~royal</span></td>
+    </tr>
+    <tr>
+      <td>satisfy</td>
+      <td><span class="skip-font">~sky</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>sympathy</td>
+      <td><span class="skip-font">~style</span></td>
+    </tr>
+    <tr>
+      <td>spy</td>
+      <td><span class="skip-font">~spy</span></td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td><span class="skip-font">~sympathy</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="z-z">Z: z</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><span class="skip-font">breeze</span></td>
+      <td>breeze</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">bronze</span></td>
+      <td>bronze</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">crazy</span></td>
+      <td>crazy</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">dozen</span></td>
+      <td>dozen</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">elizabeth</span></td>
+      <td>elizabeth</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">gaze</span></td>
+      <td>gaze</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">gazing</span></td>
+      <td>gazing</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">horizon</span></td>
+      <td>horizon</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">puzzled</span></td>
+      <td>puzzled</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">size</span></td>
+      <td>size</td>
+    </tr>
+    <tr>
+      <td><span class="skip-font">viz</span></td>
+      <td>viz</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><span class="skip-font">link correct pairs:</span></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>bronze</td>
+      <td><span class="skip-font">~breeze</span></td>
+    </tr>
+    <tr>
+      <td>dozen</td>
+      <td><span class="skip-font">~bronze</span></td>
+    </tr>
+    <tr>
+      <td>breeze</td>
+      <td><span class="skip-font">~dozen</span></td>
+    </tr>
+    <tr>
+      <td>crazy</td>
+      <td><span class="skip-font">~crazy</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>gaze</td>
+      <td><span class="skip-font">~horizon</span></td>
+    </tr>
+    <tr>
+      <td>horizon</td>
+      <td><span class="skip-font">~elizabeth</span></td>
+    </tr>
+    <tr>
+      <td>elizabeth</td>
+      <td><span class="skip-font">~gaze</span></td>
+    </tr>
+    <tr>
+      <td>gazing</td>
+      <td><span class="skip-font">~gazing</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>viz</td>
+      <td><span class="skip-font">~puzzled</span></td>
+    </tr>
+    <tr>
+      <td>puzzled</td>
+      <td><span class="skip-font">~viz</span></td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td><span class="skip-font">~size</span></td>
+    </tr>
+  </tbody>
+</table>
+

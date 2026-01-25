@@ -7,8 +7,8 @@
 # UPD
 
 There are different supporting materials for learning this script:
-- there is guide pdf that showcases different combinations of letters: `TODO`
-- there is Pope's Illiad in pdf format (tested on RM device): `TODO`
+- there is a guide pdf that showcases different combinations of letters: https://github.com/sowcow/wire_letters/blob/master/font_and_pdfs/guide-9.pdf
+- there is Pope's Illiad in pdf format (tested on RM device): https://github.com/sowcow/wire_letters/blob/master/font_and_pdfs/Iliad-7.pdf
 - https://sowcow.github.io/typing-speed/ here pressing enter toggles the font from latin script to wire letters, by running the test one can objectively measure speed of reading those letters against the baseline
 - there is `otf.otf` font file that knows `a..z` letters, it made those supporting materials possible
 

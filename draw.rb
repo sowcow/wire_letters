@@ -203,6 +203,7 @@ class DrawContext
     left = Point[-r*2 * @dx_scale, 0]
 
     @rendering << "A 1,1, 0 0,0 #{@point + left} A 1,1 0 1,0 #{@point + right}" if @show_wire
+    @raw_rendering << [?O, @point - [r*@dx_scale, 0], r * @dx_scale]
     #
     # cursor is already in the place! (right point, relative 0,0)
   end
@@ -473,6 +474,7 @@ class DrawContext
     @used_starts = []
     @used_ends = []
     @rendering = []
+    @raw_rendering = []
     @naming = []
     next_line 0
   end
@@ -489,6 +491,7 @@ class DrawContext
 
     p = @point + [dx, dy]
     @rendering << "M #{p}"
+    @raw_rendering << [?M, p]
 
     @point = p
   end
@@ -502,6 +505,7 @@ class DrawContext
 
     p = @point + [dx, dy]
     @rendering << "L #{p}" if @show_wire
+    @raw_rendering << [?L, p] if @show_wire
 
     @latest_point = p
   end
@@ -520,6 +524,7 @@ class DrawContext
 
     @latest_point = c
     @rendering << "C #{a} #{b} #{c}" if @show_wire
+    @raw_rendering << [?C, a, b, c]  if @show_wire
   end
 
   def arc dx: 0, dy: 0
@@ -541,6 +546,7 @@ class DrawContext
       thing = "-#{thing}"
     end
     @rendering.push thing
+    @raw_rendering.push [?-, thing]
   end
 
   def use_color color
@@ -611,7 +617,7 @@ class DrawContext
     color = latin
     naming = %'-font Courier -pointsize #@pointsize -strokewidth 0 -stroke #{color} -fill #{color} #{@naming * ' '}'
 
-    system <<-END.strip.lines.map(&:strip).join(' ')
+    cmd = <<-END.strip.lines.map(&:strip).join(' ')
       convert
       -size #{width}:#{height} xc:white
       -fill none
@@ -624,6 +630,83 @@ class DrawContext
       #{names && naming}
       #{file.inspect}
     END
+    File.write 'last-cmd', cmd
+    system cmd
+  end
+
+  def svg_render file
+    require_relative 'svg_builder'
+
+    drawing = []
+
+    r_used = 0
+    xs = []
+    @raw_rendering.each { |x|
+      type = x[0]
+      # p x.drop 1
+      get_data = -> { x.drop(1).flatten.map { |x| x.respond_to?(:x) ? [x.x, x.y] : x } }
+      case type
+      when ?M
+        xs.push *get_data.call
+        drawing << [type, get_data.call]
+      when ?L
+        xs.push *get_data.call
+        drawing << [type, get_data.call]
+      when ?C
+        xs.push get_data.call[2]
+        drawing << [type, get_data.call]
+      when ?O
+        xs.push *get_data.call
+        r_used = x.last
+        drawing << [type, get_data.call]
+      when ?-
+        # noop
+      else
+        raise
+      end
+    }
+
+    new_drawing = []
+    drawing.each { |x|
+      if x[0] == ?M && new_drawing.last && new_drawing.last[0] == ?M
+        new_drawing.pop
+      end
+      new_drawing << x
+    }
+    drawing = new_drawing
+
+    xs = xs.map { |(x, y)|
+      Point[x, y] if x && y
+    }.compact
+
+    x_min = xs.map { |x| x.x }.min
+    x_max = xs.map { |x| x.x }.max
+
+    y_min = xs.map { |x| x.y }.min
+    y_max = xs.map { |x| x.y }.max
+
+
+    if r_used > 0 && y_min == y_max
+      y_min -= r_used
+      y_max += r_used
+    end
+
+    data = {
+      start_x: xs.map(&:x).min,
+      start_y: xs.map(&:y).min,
+
+      end_x: xs.map(&:x).max,
+      end_y: xs.map(&:y).max,
+    }
+
+    viewBox = "#{x_min} -200.0 #{x_max - x_min} 400.0"
+
+    builder = SVGBuilder.new drawing, viewBox, data
+    p viewBox
+    builder.pen = @pen
+    text = builder.to_svg
+    puts text
+    File.write file, text
   end
 
   Point = Struct.new :x, :y do
